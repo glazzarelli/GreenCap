@@ -67,7 +67,7 @@ Marketing the off-the-grid houses as sustainable, eco-friendly, and self-suffici
 
 Certainly, here's an idea for a startup product based on a platform for crossing rivers for single bike users:
 
-13.  Single-bike user river crossing platform: A startup that creates a platform for single bike users to cross rivers that are otherwise difficult to cross. The platform would be designed to be portable, lightweight, and easy to assemble and disassemble, making it ideal for use in remote or difficult-to-access areas.
+***13.  Single-bike user river crossing platform: A startup that creates a platform for single bike users to cross rivers that are otherwise difficult to cross. The platform would be designed to be portable, lightweight, and easy to assemble and disassemble, making it ideal for use in remote or difficult-to-access areas.***
 
 The business model could involve several revenue streams:
 
