@@ -125,6 +125,7 @@ async function initDB() {
         }
     })
 
+    // Relationships
     models.Location.hasMany(models.Dog)
     models.Dog.belongsTo(models.Location)
 
@@ -157,9 +158,13 @@ async function initServer() {
             where: {
                 id: req.params.id
             },
+            // I think this is the correct way to do it, but still not tested
             include: [
                 {
                     model: models.Person
+                },
+                {
+                    model: models.Area
                 }
             ]
         })
@@ -189,6 +194,34 @@ async function initServer() {
                 {
                     model: models.Project
                 }
+            ]
+        })
+
+        if (data) {
+            res.status(200).json(data)
+        }
+        else {
+            res.sendStatus(404)
+        }
+    })
+
+    // API calls for Person(s)
+
+    app.get('/people', async (req, res) => {
+        const data = await models.Person.findAll();
+
+        res.status(200).json(data)
+    })
+
+    app.get('/people/:id', async (req, res) => {
+        const data = await models.Person.findOne({
+            where: {
+                id: req.params.id
+            },
+            include: [
+                {
+                    model: models.Project
+                },
             ]
         })
 
