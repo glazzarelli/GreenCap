@@ -21,8 +21,7 @@
 
 
         <div id="card-container">
-            <ProjectCard v-for="project of projects" :name="project.name" :image="project.image" :team="project.team"
-                :description="project.descriptionShort" />
+            <ProjectCard v-for="project of projects" :project="project" />
         </div>
 
     </div>

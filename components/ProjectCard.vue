@@ -1,41 +1,19 @@
 <template>
     <div class="card">
-        <img :src="image" alt="Startup Logo" class="card-img-top" />
+        <img :src="`${project.image}`" alt="Startup Logo" class="card-img-top" />
         <div class="card-body">
-            <h5 class="card-title">{{ name }}</h5>
-            <p class="card-text">{{ description }}</p>
+            <h5 class="card-title">{{ project.name }}</h5>
+            <p class="card-text">{{ project.descriptionShort }}</p>
             <h6 class="card-subtitle mb-2">Team Members:</h6>
             <ul>
-                <li v-for="member in team" :key="member">{{ member }}</li>
+                <li v-for="member in project.team" :key="member">{{ member }}</li>
             </ul>
         </div>
     </div>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-    props: {
-        name: {
-            type: String,
-            required: true,
-        },
-        image: {
-            type: String,
-            required: true,
-        },
-        team: {
-            type: Array,
-            required: true,
-        },
-        // short description
-        description: {
-            type: String,
-            required: true,
-        },
-    },
-});
+<script setup>
+const { project } = defineProps(['project'])
 </script>
 
 <style scoped>
