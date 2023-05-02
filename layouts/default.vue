@@ -3,19 +3,19 @@
         <!-- header -->
         <header class="shadow-sm bg-white">
             <nav class="container mx-auto p-4 flex justify-between">
-                <nuxt-link to="/" class="font-bold">GreenCapital</nuxt-link>
+                <NuxtLink to="/" class="font-bold">GreenCapital</NuxtLink>
                 <ul class="flex gap-4">
                     <li>
-                        <nuxt-link to="/areas">Areas</nuxt-link>
+                        <NuxtLink to="/areas">Areas</NuxtLink>
                     </li>
                     <li>
-                        <nuxt-link to="/projects">Projects</nuxt-link>
+                        <NuxtLink to="/projects">Projects</NuxtLink>
                     </li>
                     <li>
-                        <nuxt-link to="/people">People</nuxt-link>
+                        <NuxtLink to="/people">People</NuxtLink>
                     </li>
                     <li>
-                        <nuxt-link to="/about">About</nuxt-link>
+                        <NuxtLink to="/about">About</NuxtLink>
                     </li>
                 </ul>
             </nav>
