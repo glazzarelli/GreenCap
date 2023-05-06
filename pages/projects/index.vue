@@ -4,22 +4,6 @@
         <h1>Projects</h1>
         <p>Page with filter spotlight | all</p>
 
-        <!-- START : Debug code -->
-        <!-- <div class="form-container">
-            <input id="dog-name" type="text" placeholder="Name" v-model="dogName">
-            <input id="dog-breed" type="text" placeholder="Breed" v-model="dogBreed">
-            <button id="add-btn-form" @click="saveDogForm">Add Card (Form values)</button>
-        </div>
-
-        <hr class="my-8">
-
-        <div id="card-container">
-            <Card v-for="dog of dogs" :title="dog.name" :subtitle="dog.breed" :link="'/dogs/' + dog.id" />
-        </div> -->
-        <!-- END : Debug code -->
-
-
-
         <div id="card-container">
             <ProjectCard v-for="project of projects" :project="project" />
         </div>
