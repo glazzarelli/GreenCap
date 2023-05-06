@@ -1,13 +1,13 @@
 <template>
     <div class="card">
-        <img :src="`${project.image}`" alt="Startup Logo" class="card-img-top" />
+        <img src="~/assets/images/placeholder.png" alt="Startup Logo" class="card-img-top" />
         <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
             <p class="card-text">{{ project.descriptionShort }}</p>
-            <h6 class="card-subtitle mb-2">Team Members:</h6>
+            <!-- <h6 class="card-subtitle mb-2">Team Members:</h6>
             <ul>
                 <li v-for="member in project.team" :key="member">{{ member }}</li>
-            </ul>
+            </ul> -->
         </div>
     </div>
 </template>
@@ -18,7 +18,7 @@ const { project } = defineProps(['project'])
 
 <style scoped>
 .card {
-    width: 18rem;
+    width: 25rem;
     margin-bottom: 1rem;
     border-radius: 0.25rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
