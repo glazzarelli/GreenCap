@@ -103,9 +103,9 @@ async function initDB() {
     models.Area.belongsToMany(models.Project, { through: 'ProjectAreas' });
     models.Project.belongsToMany(models.Area, { through: 'ProjectAreas' });
 
-    // One to many
-    models.Project.hasOne(models.Person)
+    // One to many, sequelize will generate the foreign key name automatically: "personId"
     models.Person.hasMany(models.Project)
+    models.Project.belongsTo(models.Person)
 
 
     await db.sync({ force: true })
