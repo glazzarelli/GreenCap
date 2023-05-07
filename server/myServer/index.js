@@ -123,7 +123,17 @@ async function initServer() {
     //
 
     app.get('/projects', async (req, res) => {
-        const data = await models.Project.findAll();
+        const data = await models.Project.findAll({
+            include: [
+                {
+                    model: models.Area
+                },
+                // To be removed, just for testing purposes
+                {
+                    model: models.Person
+                }
+            ]
+        });
 
         res.status(200).json(data)
     })
