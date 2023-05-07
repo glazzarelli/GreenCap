@@ -7,8 +7,7 @@
 
             <p class="card-subtitle">Supervisor:</p>
             <p>{{ project.person.name }} {{ project.person.surname }}</p>
-
-
+            
             <p class="card-subtitle">Areas:</p>
             <div v-for="area in project.areas" :key="area"
                 class="m-px center relative inline-block select-none whitespace-nowrap rounded-lg bg-pink-500 py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white">

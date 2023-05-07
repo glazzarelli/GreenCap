@@ -167,9 +167,16 @@ async function initServer() {
     //
 
     app.get('/areas', async (req, res) => {
-        const data = await models.Area.findAll();
+        const data = await models.Area.findAll({
+            include: [
+                {
+                    model: models.Project
+                }
+            ]
+        });
         res.status(200).json(data)
     })
+    
 
     app.get('/area/:id', async (req, res) => {
         const data = await models.Area.findOne({
