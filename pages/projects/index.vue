@@ -14,7 +14,7 @@
 
 <script setup>
 // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
-const { data: projects } = await useFetch(useRuntimeConfig().baseURL + '/server/projects')
+const { data: projects } = await useFetch(useRuntimeConfig().public.baseURL + '/server/projects')
 
 </script>
 

@@ -6,7 +6,7 @@
         <p>Page with filter spotlight | all</p>
 
         <div id="card-container">
-            <AreaCard v-for="area of areas" :area="area" />
+            <AreaCard v-for="area in areas" :key="area.id" :area="area" :path="`/areas/${area.id}`" />
         </div>
 
     </div>
@@ -15,9 +15,9 @@
 
 <script setup>
 // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
-const { data: areas } = await useFetch(useRuntimeConfig().baseURL + '/server/areas')
+const { data: areas } = await useFetch(useRuntimeConfig().public.baseURL + '/server/areas')
 //const { data: test } = await useFetch(useRuntimeConfig().baseURL + '/server/projects')
-console.log('Area data:', areas)
+//console.log('Area data:', areas)
 
 </script>
 

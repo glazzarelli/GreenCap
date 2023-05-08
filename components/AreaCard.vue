@@ -1,33 +1,43 @@
 <template>
-    <div class="card">
-      <div class="card-body flex">
-        <div class="flex-grow">
-          <h5 class="card-title">{{ area.name }}</h5>
-          <p class="card-text">{{ area.descriptionLong }}</p>
-  
-          <p class="card-subtitle">Linked Projects:</p>
-          <div
-            v-for="project in area.projects"
-            :key="project.id"
-            class="m-px center relative inline-block select-none whitespace-nowrap rounded-lg bg-pink-500 py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white"
-          >
-            {{ project.name }}
-          </div>
+     <NuxtLink :to="`/areas/${ props.area.id}`">
+        <div class="card">
+        <div class="card-body flex">
+            <div class="flex-grow">
+            <h5 class="card-title">{{ props.area.name }}</h5>
+            <p class="card-text">{{ props.area.descriptionShort }}</p>
+    
+            <p class="card-subtitle">Linked Projects:</p>
+            <div
+                v-for="project in area.projects"
+                :key="project.id"
+                class="m-px center relative inline-block select-none whitespace-nowrap rounded-lg bg-pink-500 py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white"
+            >
+                {{ project.name }}
+            </div>
+            </div>
+            <div class="w-1/3">
+            <img
+                src="~/assets/images/placeholder.png"
+                alt="Startup Logo"
+                class="card-img-top ml-4 object-cover w-full h-48"
+            />
+            </div>
         </div>
-        <div class="w-1/3">
-          <img
-            src="~/assets/images/placeholder.png"
-            alt="Startup Logo"
-            class="card-img-top ml-4 object-cover w-full h-48"
-          />
         </div>
-      </div>
-    </div>
+    </NuxtLink>
 </template>  
   
 <script setup>
-const { area } = defineProps(['area'])
-console.log("this is area.projects "+area.projects)
+const props = defineProps({
+  area: {
+    type: Object,
+    required: true,
+  },
+  path: {
+    type: String,
+    required: true,
+  },
+});
 </script>
 
 <style scoped>
