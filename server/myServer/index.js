@@ -126,7 +126,8 @@ async function initServer() {
         const data = await models.Project.findAll({
             include: [
                 {
-                    model: models.Area
+                    model: models.Area,
+                    attributes: ['name']
                 },
                 // To be removed, just for testing purposes
                 {
@@ -176,7 +177,7 @@ async function initServer() {
         });
         res.status(200).json(data)
     })
-    
+
 
     app.get('/area/:id', async (req, res) => {
         const data = await models.Area.findOne({
