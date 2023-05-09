@@ -1,5 +1,5 @@
 <template>
-     <NuxtLink :to="`/areas/${ props.area.id}`">
+     <NuxtLink :to="`/areas/${props.area.id}`">
         <div class="card">
         <div class="card-body flex">
             <div class="flex-grow">

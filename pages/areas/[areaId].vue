@@ -8,8 +8,7 @@
 
 <script setup>
   const { areaId } = useRoute().params
-  console.log(`server/area/${areaId}`);
-  // console.log(useRuntimeConfig().public.baseURL);
+  //console.log(`server/area/${areaId}`);
   // const { data: areaX } = await useFetch(useRuntimeConfig().public.baseURL + `/server/area/${areaId}`);
   // console.log('Area data:', areaX);
   const response = ref(null);

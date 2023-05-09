@@ -1,5 +1,4 @@
 <!-- Areas page -->
-<!-- Projects page -->
 <template>
     <div>
         <h1>Areas</h1>
@@ -39,7 +38,7 @@ main {
     gap: 10px;
 }
 
-.form-container {
+/* .form-container {
     width: 90%;
     border-radius: 10px;
     border: 2px solid brown;
@@ -51,5 +50,5 @@ main {
 
     background-color: burlywood;
     padding: 20px;
-}
+} */
 </style>

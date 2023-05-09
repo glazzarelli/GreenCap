@@ -5,7 +5,7 @@
         <p>Page with filter spotlight | all</p>
 
         <div id="card-container">
-            <ProjectCard v-for="project of projects" :project="project" />
+            <ProjectCard v-for="project of projects" :project="project"/>
         </div>
 
     </div>
