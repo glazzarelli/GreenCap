@@ -144,7 +144,6 @@ async function initServer() {
             where: {
                 id: req.params.id
             },
-            // I think this is the correct way to do it, but still not tested
             include: [
                 {
                     model: models.Person
