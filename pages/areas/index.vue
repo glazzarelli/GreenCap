@@ -2,7 +2,6 @@
 <template>
     <div>
         <h1>Areas</h1>
-        <p>Page with filter spotlight | all</p>
 
         <div id="card-container">
             <AreaCard v-for="area in areas" :key="area.id" :area="area" :path="`/areas/${area.id}`" />

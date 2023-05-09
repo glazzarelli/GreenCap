@@ -2,14 +2,15 @@
     <div>
         <h1>Projects</h1>
 
-        <div class="filters filters--has-tabs">
+        <div class="filters">
             <div class="filters-container">
                 <ul class="filter-tabs flex">
                     <li class="nav-item filters-tab m-1">
-                        <button @click="toggleSpotlight(true)" class="btn px-10">Spotlight</button>
+                        <button @click="toggleSpotlight(true)" class="btn px-10"
+                            :class="{ active: spotlight }">Spotlight</button>
                     </li>
                     <li class="nav-item filters-tab m-1">
-                        <button @click="toggleAll()" class="btn px-16">All</button>
+                        <button @click="toggleAll()" class="btn px-16" :class="{ active: !spotlight }">All</button>
                     </li>
                     <li v-if="!spotlight">
                         <select v-model="selectedArea" label="Areas"
@@ -29,14 +30,13 @@
                     </li>
                 </ul>
             </div>
-
         </div>
 
-
-
-
-        <div id="card-container">
+        <div id="card-container" v-if="filteredProjects.length > 0">
             <ProjectCard v-for="project of filteredProjects" :project="project" />
+        </div>
+        <div v-else>
+            <p class="justify-center flex font-semibold">No projects found</p>
         </div>
 
 
@@ -122,6 +122,12 @@ const filteredProjects = computed(() => {
 </script>
 
 <style scoped>
+/* change color botton active */
+.btn.active {
+    background-color: #12b488;
+    color: white;
+}
+
 #card-container {
     display: flex;
     flex-wrap: wrap;
@@ -151,5 +157,13 @@ main {
 
     background-color: burlywood;
     padding: 20px;
+}
+
+.filters {
+    /* group the elements at the center */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 </style>
