@@ -139,7 +139,7 @@ async function initServer() {
         res.status(200).json(data)
     })
 
-    app.get('/project/:id', async (req, res) => {
+    app.get('/projects/:id', async (req, res) => {
         const data = await models.Project.findOne({
             where: {
                 id: req.params.id
@@ -178,7 +178,7 @@ async function initServer() {
     })
 
 
-    app.get('/area/:id', async (req, res) => {
+    app.get('/areas/:id', async (req, res) => {
         const data = await models.Area.findOne({
             where: {
                 id: req.params.id
