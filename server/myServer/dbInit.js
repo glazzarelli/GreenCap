@@ -260,31 +260,28 @@ export default async (models) => {
 
     // Associate project with areas (Many-To-Many relationship)
     // 0 - Renewable energy 
-    await area0.addProject(project0);
     await area0.addProject(project1);
     await area0.addProject(project2);
     await area0.addProject(project3);
-    await area0.addProject(project4);
+    await area0.addProject(project6);
+    await area0.addProject(project8);
+    await area0.addProject(project14);
+
     // 1 - Sustainable transport
-    await area1.addProject(project4);
-    await area1.addProject(project5);
+    await area1.addProject(project2);
     await area1.addProject(project6);
-    await area1.addProject(project7);
-    await area1.addProject(project8);
+    await area1.addProject(project5);
+    await area1.addProject(project13);
+   
     // 2 - Green building and intelligent housing
+    await area2.addProject(project4);
+    await area2.addProject(project7);
     await area2.addProject(project8);
-    await area2.addProject(project9);
-    await area2.addProject(project10);
-    await area2.addProject(project11);
-    await area2.addProject(project12);
+    
     // 3 - Sustainable agriculture and food production
+    await area3.addProject(project9);
+    await area3.addProject(project10);
+    await area3.addProject(project11);
     await area3.addProject(project12);
-    await area3.addProject(project13);
-    await area3.addProject(project14);
-    await area3.addProject(project0);
-    await area3.addProject(project1);
-    await area3.addProject(project2);
-    await area3.addProject(project3);
-    await area3.addProject(project4);
-    await area3.addProject(project5);
+
 }
