@@ -145,19 +145,6 @@ main {
     gap: 10px;
 }
 
-.form-container {
-    width: 90%;
-    border-radius: 10px;
-    border: 2px solid brown;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    gap: 20px;
-
-    background-color: burlywood;
-    padding: 20px;
-}
 
 .filters {
     /* group the elements at the center */
