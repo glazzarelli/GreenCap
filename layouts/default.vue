@@ -28,7 +28,10 @@
                         <NuxtLink to="/people">People</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/about">About</NuxtLink>
+                        <NuxtLink to="/about">About Us</NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/contact">Contact Us</NuxtLink>
                     </li>
                 </ul>
             </nav>
