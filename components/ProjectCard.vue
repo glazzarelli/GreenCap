@@ -1,6 +1,9 @@
 <template>
     <div class="card w-96 bg-base-100 shadow-xl">
-        <figure><img src="~/assets/images/placeholder.png" alt="Startup Logo" /></figure>
+        <NuxtLink :to="`/projects/${project.id}`">
+            <figure><img src="~/assets/images/placeholder.png" alt="Startup Logo" /></figure>
+        </NuxtLink>
+
         <div class="card-body">
             <h2 class="card-title">
                 {{ project.name }}

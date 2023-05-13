@@ -1,7 +1,7 @@
 <!-- People page -->
 <template>
   <div>
-    <h1>People</h1>
+    <Heading title="People" />
     <div class="card-container">
       <PersonCard v-for="person in people" :person="person" :key="person.id" />
     </div>

@@ -1,20 +1,19 @@
 <template>
     <div>
-        <h1>Projects</h1>
+        <Heading title="Projects" />
 
-        <div class="flex flex-col items-center mb-10">
+        <div class="flex flex-col items-center mb-10 sm:mx-20">
 
-            <div class="btn-group btn-group-vertical w-2/4 sm:btn-group-horizontal justify-center">
+            <div class="btn-group btn-group-vertical max-sm:w-3/4 sm:w-2/4 sm:btn-group-horizontal justify-center">
                 <button @click="toggleSpotlight(true)" class="btn btn-block text-lg"
-                    :class="{ 'btn-active': spotlight }">Spotlight</button>
+                    :class="{ 'btn-active': spotlight }">SPOTLIGHT</button>
                 <button @click="toggleAll()" class="btn btn-block w-full text-lg"
-                    :class="{ 'btn-active': !spotlight }">All</button>
+                    :class="{ 'btn-active': !spotlight }">ALL</button>
             </div>
 
             <div v-if="!spotlight" class="form-control max-sm:w-3/4 max-w-md">
                 <label class="label">
                     <span class="label-text">Select by area:</span>
-
                 </label>
                 <select v-model="selectedArea" class="select select-bordered" label="Areas">
                     <option value="">All Areas</option>

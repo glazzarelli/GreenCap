@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <h1>hello world</h1>
-    <p v-if="response">This is the passed area: {{ response.name }}</p>
-    <p v-else>Loading...</p>
+  <div v-if="response">
+    <Heading :title="'Areas / ' + response.name" />
+    <p> This is the passed area: {{ response.name }}</p>
   </div>
+  <p v-else>Loading...</p>
 </template>
 
 <script setup>

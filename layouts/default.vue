@@ -3,13 +3,11 @@
         <!-- header -->
         <Header />
         <!-- main -->
-        <main class="container mx-auto p-4">
+        <main>
             <slot />
         </main>
         <!-- footer -->
         <Footer />
-
-
     </div>
 </template>
 

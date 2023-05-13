@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <section>
-      <h1>{{ person.name }} {{ person.surname }}</h1>
-    </section>
-  </div>
+  <Heading :title="`People / ` + person.name + ' ' + person.surname" />
   <!-- start of the square -->
   <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 w-full mx-auto mt-10">
     <div class="bg-green-200 bg-cover bg-center w-full h-[500px] border-4 border-green-700 rounded-lg">
