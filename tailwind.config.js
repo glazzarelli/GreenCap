@@ -3,7 +3,9 @@ module.exports = {
 
   daisyui: {
     styled: true,
-    themes: ["lemonade", "forest"],
+    // themes: ["lemonade", "forest"],
+    // to change:
+    theme: true,
     base: true,
     utils: true,
     logs: true,
