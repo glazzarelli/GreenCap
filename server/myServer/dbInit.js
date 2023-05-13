@@ -283,5 +283,6 @@ export default async (models) => {
     await area3.addProject(project10);
     await area3.addProject(project11);
     await area3.addProject(project12);
+    await area3.addProject(project0);
 
 }
