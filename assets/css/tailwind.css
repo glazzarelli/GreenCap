@@ -24,13 +24,13 @@ main {
     gap: 10px;
 }
 
+/* change to primary */
 .router-link-exact-active {
     color: #12b488;
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    @apply text-4xl mb-10;
 }
 
 h2 {

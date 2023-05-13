@@ -1,7 +1,7 @@
 <!-- Project page -->
 <template>
+    <Heading :title="`Projects / ` + project.name" />
     <div>
-
         <div class="grid grid-cols-4 grid-rows-2 gap-12">
             <div class="col-span-2">
                 <div
@@ -44,7 +44,6 @@
 //passed via link
 const { projectId } = useRoute().params
 const { data: project } = await useFetch(useRuntimeConfig().public.baseURL + `/server/projects/${projectId}`)
-console.log("this is the project passed as a param " + useRoute.params)
 </script>
 
 <style scoped></style>

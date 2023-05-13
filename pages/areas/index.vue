@@ -1,7 +1,7 @@
 <!-- Areas page -->
 <template>
     <div>
-        <h1>Areas</h1>
+        <Heading title="Areas" />
 
         <div class="card-container">
             <AreaCard v-for="area in areas" :key="area.id" :area="area" :path="`/areas/${area.id}`" />
