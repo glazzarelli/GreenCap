@@ -33,8 +33,7 @@
                 <label class="swap swap-rotat md:mr-5">
 
                     <!-- this hidden checkbox controls the state -->
-                    <input type="checkbox" />
-
+                    <input type="checkbox" @change="toggleTheme" />
                     <!-- sun icon -->
                     <svg class="swap-on fill-current w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path
@@ -81,7 +80,12 @@
 </template>
 
 <script setup>
+const colorMode = useColorMode();
+const themes = ["lemonade", "forest"];
 
+const toggleTheme = () => {
+    colorMode.preference = colorMode.preference === themes[0] ? themes[1] : themes[0];
+};
 </script>
 
 <style scoped></style>
