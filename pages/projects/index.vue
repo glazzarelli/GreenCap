@@ -8,7 +8,7 @@
                 <button @click="toggleSpotlight(true)" class="btn btn-block text-lg"
                     :class="{ 'btn-active': spotlight }">Spotlight</button>
                 <button @click="toggleAll()" class="btn btn-block w-full text-lg"
-                    :class="{ 'btn-active': spotlight }">All</button>
+                    :class="{ 'btn-active': !spotlight }">All</button>
             </div>
 
             <div v-if="!spotlight" class="form-control max-sm:w-3/4 max-w-md">
