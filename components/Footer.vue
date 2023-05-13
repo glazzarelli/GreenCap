@@ -1,6 +1,5 @@
 <template>
-    <footer
-        class="footer  p-10 bg-base-200 text-base-content items-center max-sm:grid-flow-row max-sm:justify-items-center">
+    <footer class="footer p-10 bg-base-200 text-base-content items-center max-sm:grid-flow-row max-sm:justify-items-center">
         <div class="items-center grid-flow-col ">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-1" fill="none" viewBox="0 0 22 22"
                 stroke="currentColor">

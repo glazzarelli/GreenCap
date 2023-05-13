@@ -5,7 +5,12 @@
 
 body {}
 
-@layer components {}
+@layer components {
+    .card:hover {
+        @apply -translate-y-1 scale-105 transition-transform duration-200 ease-in-out;
+    }
+}
+
 
 .card-container {
     display: flex;
@@ -24,6 +29,12 @@ main {
     gap: 10px;
 }
 
+main {
+    @apply mb-10;
+}
+
+
+
 /* change to primary */
 .router-link-exact-active {
     color: #12b488;
@@ -34,8 +45,7 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
+    @apply text-2xl;
 }
 
 p {
