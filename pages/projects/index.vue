@@ -2,37 +2,28 @@
     <div>
         <h1>Projects</h1>
 
-        <div class="filters">
-            <div class="filters-container">
-                <ul class="filter-tabs flex">
-                    <li class="nav-item filters-tab m-1">
-                        <button @click="toggleSpotlight(true)" class="btn px-10"
-                            :class="{ active: spotlight }">Spotlight</button>
-                    </li>
-                    <li class="nav-item filters-tab m-1">
-                        <button @click="toggleAll()" class="btn px-16" :class="{ active: !spotlight }">All</button>
-                    </li>
-                    <li v-if="!spotlight">
-                        <select v-model="selectedArea" label="Areas"
-                            class="border border-base-content border-opacity-0 bg-base-100 pr-10 rounded-btn p-2 rounded m-1">
-                            <option value="">All Areas</option>
-                            <option v-for="area in areas" :value="area">{{ area }}</option>
-                        </select>
+        <div class="flex flex-col items-center mb-10">
 
-                        <select v-model="selectedSupervisor"
-                            class="border border-base-content border-opacity-0 bg-base-100 pr-10 rounded-btn p-2 rounded m-1">
-                            <option :value="{ name: '', surname: '' }">All Supervisors</option>
-                            <option v-for="supervisor in supervisors" :value="supervisor">
-                                {{ supervisor.name }} {{ supervisor.surname }}
-                            </option>
-                        </select>
+            <div class="btn-group btn-group-vertical w-2/4 sm:btn-group-horizontal justify-center">
+                <button @click="toggleSpotlight(true)" class="btn btn-block text-lg"
+                    :class="{ 'btn-active': spotlight }">Spotlight</button>
+                <button @click="toggleAll()" class="btn btn-block w-full text-lg"
+                    :class="{ 'btn-active': !spotlight }">All</button>
+            </div>
 
-                    </li>
-                </ul>
+            <div v-if="!spotlight" class="form-control max-sm:w-3/4 max-w-md">
+                <label class="label">
+                    <span class="label-text">Select by area:</span>
+
+                </label>
+                <select v-model="selectedArea" class="select select-bordered" label="Areas">
+                    <option value="">All Areas</option>
+                    <option v-for="area in areas" :value="area">{{ area }}</option>
+                </select>
             </div>
         </div>
 
-        <div id="card-container" v-if="filteredProjects.length > 0">
+        <div class="card-container" v-if="filteredProjects.length > 0">
             <ProjectCard v-for="project of filteredProjects" :project="project" />
         </div>
         <div v-else>
@@ -88,9 +79,6 @@ function toggleAll() {
     spotlight.value = false
     // reset selected areas
     selectedArea.value = '';
-    // reset selected supervisors
-    selectedSupervisor.value = { name: '', surname: '' };
-
 }
 
 const filteredProjects = computed(() => {
@@ -100,57 +88,16 @@ const filteredProjects = computed(() => {
         filtered = filtered.filter(project => project.areas.some(area => area.name === selectedArea.value));
     }
 
-    if (selectedSupervisor.value.name !== '' && selectedSupervisor.value.surname !== '') {
-        filtered = filtered.filter(
-            project =>
-                project.person.name === selectedSupervisor.value.name &&
-                project.person.surname === selectedSupervisor.value.surname
-        );
-    }
 
     if (spotlight.value) {
         // return the first 3 projects in the array without modifying the original array
         filtered = projects.slice(3, 6);
         // reset selected areas
         selectedArea.value = '';
-        // reset selected supervisors
-        selectedSupervisor.value = { name: '', surname: '' };
     }
 
     return filtered;
 })
 </script>
 
-<style scoped>
-/* change color botton active */
-.btn.active {
-    background-color: #12b488;
-    color: white;
-}
-
-#card-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-start;
-    gap: 20px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
-    gap: 10px;
-}
-
-
-.filters {
-    /* group the elements at the center */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-</style>
+<style scoped></style>
