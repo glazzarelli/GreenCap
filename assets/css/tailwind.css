@@ -29,12 +29,6 @@ main {
     gap: 10px;
 }
 
-main {
-    @apply mb-10;
-}
-
-
-
 /* change to primary */
 .router-link-exact-active {
     color: #12b488;
@@ -50,9 +44,4 @@ h2 {
 
 p {
     margin: 20px 0;
-}
-
-.btn.active {
-    background-color: #12b488;
-    color: white;
 }

@@ -1,14 +1,12 @@
 <template>
-    <footer class="footer p-10 bg-base-200 text-base-content items-center max-sm:grid-flow-row max-sm:justify-items-center">
-        <div class="items-center grid-flow-col ">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-1" fill="none" viewBox="0 0 22 22"
-                stroke="currentColor">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
+    <footer
+        class="footer p-5 sm:p-10 bg-base-200 text-base-content max-sm:justify-center items-center max-sm:grid-flow-row max-sm:justify-items-center">
+        <div class="sm:footer-start items-center grid-flow-col ">
+            <logo class="fill-current h-7 w-7" />
             <p>Copyright © 2023 GreenCap - All right reserved</p>
         </div>
-        <div class="footer-end flex items-center">
-            <div class="mx-2">
+        <div class="footer-end flex flex-col sm:flex-row  max-sm:grid-flow-row ">
+            <div class="mx-2 max-sm:grid-flow-row ">
                 <span class="footer-title mx-1">Newsletter</span>
                 <label class="label">
                     <span class="label-text">Enter your email address</span>
