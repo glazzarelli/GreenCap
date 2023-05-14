@@ -127,7 +127,7 @@ async function initServer() {
             include: [
                 {
                     model: models.Area,
-                    attributes: ['name']
+                    attributes: ['id', 'name']
                 },
                 // To be removed, just for testing purposes
                 {

@@ -10,9 +10,13 @@
             </h2>
             <p>{{ project.descriptionShort }}</p>
             <div class="card-actions justify-end">
-                <button class="badge badge-secondary" v-for="area in project.areas" :key="area">
-                    {{ area.name }}
-                </button>
+                <div v-for="area in project.areas" :key="area">
+                    <NuxtLink :to="`/areas/${area.id}`">
+                        <div class="badge badge-secondary hover:scale-110">
+                            {{ area.name }}
+                        </div>
+                    </NuxtLink>
+                </div>
             </div>
         </div>
     </div>
@@ -20,6 +24,7 @@
 
 <script setup>
 const { project } = defineProps(['project'])
+
 </script>
 
 <style scoped></style>
