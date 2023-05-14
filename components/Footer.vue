@@ -1,11 +1,8 @@
 <template>
     <footer
-        class="footer p-5 sm:p-10 bg-base-200 text-base-content max-sm:justify-center items-center max-sm:grid-flow-row max-sm:justify-items-center">
-        <div class="sm:footer-start items-center grid-flow-col ">
-            <logo class="fill-current h-7 w-7" />
-            <p>Copyright © 2023 GreenCap - All right reserved</p>
-        </div>
-        <div class="footer-end flex flex-col sm:flex-row  max-sm:grid-flow-row ">
+        class="footer p-5 sm:p-10 bg-base-200 text-base-content max-sm:justify-center items-center max-sm:grid-flow-row max-sm:justify-items-center border-t border-[primary]">
+
+        <div class="flex flex-col sm:flex-row max-sm:grid-flow-row ">
             <div class="mx-2 max-sm:grid-flow-row ">
                 <span class="footer-title mx-1">Newsletter</span>
                 <label class="label">
@@ -19,12 +16,15 @@
                 </div>
             </div>
         </div>
+        <div class="items-center footer-end grid-flow-col ">
+            <IconLogo class="h-7" />
+            <p>Copyright © 2023 GreenCap - All right reserved</p>
+        </div>
     </footer>
 </template>
 
 
 <script setup>
-
 </script>
 
 <style scoped></style>

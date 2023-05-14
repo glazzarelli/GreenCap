@@ -1,12 +1,10 @@
 <template>
-    <header>
-        <nav class="navbar bg-base-100">
+    <header class="fixed top-0 left-0 right-0 z-[1000]">
+        <nav class="navbar bg-base-100 border-b border-[primary]">
             <div class="navbar-start ">
                 <NuxtLink to="/" class="btn btn-ghost normal-case text-xl mx-1">
                     GreenCapital
-
-                    <Logo class=" h-7 w-7 fill-current" />
-
+                    <IconLogo class="h-7 mx-2" />
                 </NuxtLink>
             </div>
             <div class="navbar-end">
@@ -46,7 +44,7 @@
                     </svg>
 
                 </label>
-                <div class="dropdown">
+                <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost md:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -54,8 +52,7 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-                    <ul tabindex="0"
-                        class="menu menu-normal dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 -translate-x-36">
+                    <ul tabindex="0" class="menu menu-normal dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         <li>
                             <NuxtLink to="/areas">Areas</NuxtLink>
                         </li>
