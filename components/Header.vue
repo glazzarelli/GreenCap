@@ -4,10 +4,9 @@
             <div class="navbar-start ">
                 <NuxtLink to="/" class="btn btn-ghost normal-case text-xl mx-1">
                     GreenCapital
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mx-1" fill="none" viewBox="0 0 22 22"
-                        stroke="currentColor">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                    </svg>
+
+                    <Logo class=" h-7 w-7 fill-current" />
+
                 </NuxtLink>
             </div>
             <div class="navbar-end">
