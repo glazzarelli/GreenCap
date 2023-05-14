@@ -50,6 +50,9 @@ const themes = [
     'winter',
 ];
 
+definePageMeta({
+    layout: 'custom',
+});
 
 </script>
 

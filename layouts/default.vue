@@ -3,7 +3,7 @@
         <!-- header -->
         <Header />
         <!-- main -->
-        <main>
+        <main class="px-5 py-5">
             <slot />
         </main>
         <!-- footer -->

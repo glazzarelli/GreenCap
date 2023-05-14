@@ -2,12 +2,12 @@
     <div>
         <Heading title="Projects" />
 
-        <div class="flex flex-col items-center mb-10 sm:mx-20">
+        <div class="flex flex-col items-center mb-10 mx-10 sm:mx-20">
 
-            <div class="btn-group btn-group-vertical max-sm:w-3/4 sm:w-2/4 sm:btn-group-horizontal justify-center">
-                <button @click="toggleSpotlight(true)" class="btn btn-block text-lg"
+            <div class="btn-group  w-2/4 btn-group-horizontal justify-center">
+                <button @click="toggleSpotlight(true)" class="btn btn-outline btn-block text-lg"
                     :class="{ 'btn-active': spotlight }">SPOTLIGHT</button>
-                <button @click="toggleAll()" class="btn btn-block w-full text-lg"
+                <button @click="toggleAll()" class="btn btn-ghost btn-outline w-full text-lg"
                     :class="{ 'btn-active': !spotlight }">ALL</button>
             </div>
 
@@ -35,7 +35,7 @@
 
 
 <script setup>
-const { data: projects } = reactive(await useFetch(useRuntimeConfig().baseURL + '/server/projects'))
+const { data: projects } = reactive(await useFetch(useRuntimeConfig().public.baseURL + '/server/projects'))
 
 // get all areas
 const areas = computed(() => {

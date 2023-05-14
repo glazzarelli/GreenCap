@@ -3,7 +3,7 @@
     <div>
         <Heading title="Areas" />
 
-        <div class="card-container mx-10">
+        <div class="card-container">
             <AreaCard v-for="area in areas" :key="area.id" :area="area" :path="`/areas/${area.id}`" />
         </div>
 
