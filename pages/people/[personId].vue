@@ -36,7 +36,10 @@
 //passed via link
 const { personId } = useRoute().params;
 const { data: person } = await useFetch(useRuntimeConfig().public.baseURL + `/server/people/${personId}`);
-    //console.log("this is the person passed as a param "+person.name);
+if(!person.value){
+  //inside the createError function we can pass an object used as a prop by Error.vue
+  throw createError({statusCode: 404, statusMessage: 'Person not found', fatal: true});
+}
 </script>
 
 <style scoped></style>

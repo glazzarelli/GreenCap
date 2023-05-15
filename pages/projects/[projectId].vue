@@ -42,8 +42,12 @@
 
 <script setup>
 //passed via link
-const { projectId } = useRoute().params
-const { data: project } = await useFetch(useRuntimeConfig().public.baseURL + `/server/projects/${projectId}`)
+const { projectId } = useRoute().params;
+const { data: project } = await useFetch(useRuntimeConfig().public.baseURL + `/server/projects/${projectId}`);
+if(!project.value){
+  //inside the createError function we can pass an object used as a prop by Error.vue
+  throw createError({statusCode: 404, statusMessage: 'Project not found', fatal: true});
+}
 </script>
 
 <style scoped></style>
