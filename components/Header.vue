@@ -1,5 +1,5 @@
 <template>
-    <header class="fixed top-0 left-0 right-0 z-[1000]">
+    <header class="sticky top-0 z-50">
         <nav class="navbar bg-base-100 border-b border-[primary]">
             <div class="navbar-start ">
                 <NuxtLink to="/" class="btn btn-ghost normal-case text-xl mx-1">
