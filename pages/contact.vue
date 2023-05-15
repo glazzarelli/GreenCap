@@ -1,7 +1,7 @@
 <template>
     <div>
         <Heading title="Contact Us" />
-        <div class="container px-5 flex sm:flex-nowrap flex-wrap">
+        <div class="container mx-auto px-5 flex sm:flex-nowrap flex-wrap">
             <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                 <iframe class="absolute inset-0" style="filter: grayscale(1) contrast(1.2) opacity(0.4);" title="map"
                     marginheight="0" marginwidth="0" scrolling="no"
