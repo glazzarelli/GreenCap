@@ -27,8 +27,7 @@
                         </li>
                     </ul>
                 </div>
-                <label class="swap swap-rotat md:mr-5">
-
+                <label class="swap swap-rotate md:mr-5">
                     <!-- this hidden checkbox controls the state -->
                     <input type="checkbox" @change="toggleTheme" />
                     <!-- sun icon -->
