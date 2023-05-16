@@ -3,7 +3,7 @@
         <nav class="navbar bg-base-100 border-b border-[primary]">
             <div class="navbar-start ">
                 <NuxtLink to="/" class="btn btn-ghost normal-case text-xl mx-1">
-                    GreenCapital
+                    GREENCAPITAL
                     <IconLogo class="h-7 mx-2" />
                 </NuxtLink>
             </div>
@@ -76,7 +76,7 @@
 
 <script setup>
 const colorMode = useColorMode();
-const themes = ["lemonade", "forest"];
+const themes = ["light", "dark"];
 
 const toggleTheme = () => {
     colorMode.preference = colorMode.preference === themes[0] ? themes[1] : themes[0];

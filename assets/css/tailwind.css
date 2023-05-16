@@ -1,4 +1,8 @@
 /* Here goes additional css to extend the tailwind module */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Noto+Sans+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,6 +25,23 @@ body {}
     gap: 20px;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+}
+
+.navbar-start {
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+}
+
+header {
+    font-family: 'Not Sans Mono', monospace;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -35,7 +56,9 @@ main {
 }
 
 h1 {
-    @apply text-4xl mb-10;
+    @apply max-[460px]:text-3xl text-4xl sm:text-5xl font-bold leading-none text-center mb-5 sm:mb-10;
+    font-family: 'Major Mono Display', monospace;
+    text-transform: lowercase;
 }
 
 h2 {
