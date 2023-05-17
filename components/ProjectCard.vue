@@ -1,7 +1,7 @@
 <template>
     <div class="card w-96 bg-base-100 shadow-xl">
         <NuxtLink :to="`/projects/${project.id}`">
-            <figure><img src="~/assets/images/placeholder.png" alt="Startup Logo" /></figure>
+            <figure><img :src="`/images/projects/${project.image}`" alt="Startup Logo" /></figure>
         </NuxtLink>
 
         <div class="card-body">
@@ -24,7 +24,6 @@
 
 <script setup>
 const { project } = defineProps(['project'])
-
 </script>
 
 <style scoped></style>
