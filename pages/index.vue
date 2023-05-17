@@ -10,6 +10,20 @@
                     <option disabled selected>Theme</option>
                     <option v-for="theme of themes" :key="theme">{{ theme }}</option>
                 </select>
+                <hr />
+                <div class="badge">default</div>
+                <div class="badge badge-primary">primary</div>
+                <div class="badge badge-secondary">secondary</div>
+                <div class="badge badge-accent">accent</div>
+                <div class="badge badge-ghost">ghost</div>
+                <div class="badge bg-base-100">bg-base-100</div>
+                <div class="badge bg-base-200">bg-base-200</div>
+                <div class="badge badge-outline">outline</div>
+                <div class="badge badge-success">success</div>
+                <div class="badge badge-error">error</div>
+                <div class="badge badge-warning">warning</div>
+                <div class="badge badge-info">info</div>
+                <div class="badge badge-neutral">neutral</div>
             </div>
         </div>
     </div>
