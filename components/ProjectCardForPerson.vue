@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <NuxtLink :to="`/projects/${project.id}`">
-        <img src="~/assets/images/placeholder.png" alt="Startup Logo" class="card-img-top" />
+        <img :src="`/images/projects/${project.image}`" alt="Startup Logo" class="card-img-top" />
         <div class="card-body">
             <h5 class="card-title">{{ project.name }}</h5>
             <p class="card-text">{{ project.descriptionShort }}</p>
@@ -17,7 +17,9 @@
 
 <script setup>
 const { project } = defineProps(['project'])
-console.log('Project areas :', project.areas);
+console.log('Project id passed to cardForPerson :', project.id);
+console.log('Project image passed to cardForPerson :', project.image);
+//console.log('Project areas :', project.areas);
 //console.log('Project data passed to card :', project.person);
 </script>
 

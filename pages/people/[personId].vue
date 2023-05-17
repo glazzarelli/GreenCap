@@ -3,7 +3,7 @@
   <!-- start of the square -->
   <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 w-full mx-auto mt-10">
     <div class="bg-green-200 bg-cover bg-center w-full h-[500px] border-4 border-green-700 rounded-lg">
-      <img src="~/assets/images/placeholder.png" alt="User" class="w-full h-full object-contain" />
+      <img :src="`/images/people/${person.image}`" alt="User" class="w-full h-full object-contain" />
     </div>
     <div
       class="flex items-center justify-center text-lg font-semibold w-full h-[500px] overflow-auto p-4 border-4 border-green-700 rounded-lg">
@@ -19,7 +19,6 @@
     </div>
   </div>
   <!-- end of the square -->
-
 
   <div class="mt-12">
     <h1>Followed Projects</h1>
