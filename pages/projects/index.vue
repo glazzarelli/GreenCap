@@ -2,20 +2,20 @@
     <div>
         <Heading title="Projects" />
 
-        <div class="flex flex-col items-center mb-10 mx-10 sm:mx-20">
+        <div class="flex flex-col items-center mb-10 mx-10 sm:mx-20 ">
 
-            <div class="btn-group  w-2/4 btn-group-horizontal justify-center">
+            <div class="btn-group w-3/5 lg:w-2/4 btn-group-horizontal justify-center">
                 <button @click="toggleSpotlight(true)" class="btn btn-outline btn-block text-lg"
                     :class="{ 'btn-active': spotlight }">SPOTLIGHT</button>
-                <button @click="toggleAll()" class="btn btn-ghost btn-outline w-full text-lg"
+                <button @click="toggleAll()" class="btn btn-outline btn-block text-lg"
                     :class="{ 'btn-active': !spotlight }">ALL</button>
             </div>
 
-            <div v-if="!spotlight" class="form-control max-sm:w-3/4 max-w-md">
+            <div v-if="!spotlight" class="form-control sm:max-w-sm">
                 <label class="label">
                     <span class="label-text">Select by area:</span>
                 </label>
-                <select v-model="selectedArea" class="select select-bordered" label="Areas">
+                <select v-model="selectedArea" class="select select-bordered w-full" label="Areas">
                     <option value="">All Areas</option>
                     <option v-for="area in areas" :value="area">{{ area }}</option>
                 </select>
