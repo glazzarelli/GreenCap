@@ -2,7 +2,7 @@
     <NuxtLink :to="`/areas/${props.area.id}`">
         <div class="card md:card-side bg-base-100 shadow-xl">
             <figure class="lg:w-1/3 lg:h-auto h-64 object-cover object-center rounded"><img
-                    :src="`/images/areas/${area.image}`" alt="Area image" class="object-cover w-full h-full" />
+                    :src="`images/areas/${area.image}`" alt="Area image" class="object-cover w-full h-full" />
             </figure>
             <div class="card-body md:w-1/2">
                 <h2 class="card-title">{{ props.area.name }}</h2>
@@ -27,6 +27,8 @@ const props = defineProps({
         required: true,
     },
 });
+
+//console.log('Area data passed to card :', props.area);
 </script>
 
 <style scoped></style>
