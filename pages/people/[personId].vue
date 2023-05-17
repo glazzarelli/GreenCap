@@ -1,12 +1,12 @@
 <template>
   <Heading :title="`People / ` + person.name + ' ' + person.surname" />
-  <div class="grid grid-cols-2 gap-4">
+  <div class="grid sm:grid-cols-2 gap-4">
     <div class="shadow-lg rounded-lg p-5">
     <img class="w-full rounded-md" :src="`/images/people/${person.image}`" alt="Image description">
     <!-- <h2 class="text-xl font-bold mt-4">{{person.motto}}</h2> -->
     <!-- Additional info here -->
     </div>
-    <div class="shadow-sm rounded-lg p-3">
+    <div class="shadow-sm rounded-lg p-5">
       <blockquote class="italic text-center text-4xl font-serif mt-10 mb-24">
           "{{person.motto}}"
       </blockquote>
@@ -22,7 +22,6 @@
     </div>
   </div>
 </template>
-
 
 
 <script setup>
