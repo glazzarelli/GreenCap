@@ -1,24 +1,18 @@
 <template>
   <Heading :title="`People / ` + person.name + ' ' + person.surname" />
-  <!-- start of the square -->
-  <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 w-full mx-auto mt-10">
-    <div class="bg-green-200 bg-cover bg-center w-full h-[500px] border-4 border-green-700 rounded-lg">
-      <img :src="`/images/people/${person.image}`" alt="User" class="w-full h-full object-contain" />
+  <div class="grid grid-cols-2 gap-4">
+    <div class="shadow-lg rounded-lg p-5">
+    <img class="w-full rounded-md" :src="`/images/people/${person.image}`" alt="Image description">
+    <!-- <h2 class="text-xl font-bold mt-4">{{person.motto}}</h2> -->
+    <!-- Additional info here -->
     </div>
-    <div
-      class="flex items-center justify-center text-lg font-semibold w-full h-[500px] overflow-auto p-4 border-4 border-green-700 rounded-lg">
-      {{ person.motto }}
+    <div class="shadow-sm rounded-lg p-3">
+      <blockquote class="italic text-center text-4xl font-serif mt-10 mb-24">
+          "{{person.motto}}"
+      </blockquote>
+      <h2>{{ person.cv }}</h2>
     </div>
-    <div
-      class="flex items-start justify-center text-lg font-semibold w-full h-[500px] overflow-auto p-4 pb-4 border-4 border-green-700 rounded-lg">
-      {{ person.cv }}
-    </div>
-    <div
-      class="bg-green-200 flex items-center justify-center text-lg font-semibold w-full h-[500px] overflow-auto p-4 border-4 border-green-700 rounded-lg">
-      {{ person.motto }}
-    </div>
-  </div>
-  <!-- end of the square -->
+</div>
 
   <div class="mt-12">
     <h1>Followed Projects</h1>
@@ -41,4 +35,8 @@ if(!person.value){
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+  .motto {
+    font-family: 'Abyssinica SIL', serif;
+}
+</style>
