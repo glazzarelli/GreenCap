@@ -51,6 +51,10 @@ async function initDB() {
             type: DataTypes.STRING,
             allowNull: false
         },
+        investment: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
     })
 
     models.Area = db.define('area', {
@@ -68,6 +72,10 @@ async function initDB() {
         },
         descriptionLong: {
             type: DataTypes.STRING,
+            allowNull: false
+        },
+        totalInvestment: {
+            type: DataTypes.INTEGER,
             allowNull: false
         },
     })
@@ -145,10 +153,10 @@ async function initServer() {
                 id: req.params.id
             },
             include: [
-                {
+               {
                     model: models.Person
-                },
-                {
+            },
+              {
                     model: models.Area
                 }
             ]
