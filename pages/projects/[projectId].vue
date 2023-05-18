@@ -32,7 +32,6 @@
             <div class="col-start-4">
                 <h6 class="card-subtitle mb-2">Supervisor: </h6>
                 {{ project.person.name }} {{ project.person.name }}
-
             </div>
             <div class="col-span-4 row-start-2">{{ project.descriptionLong }}</div>
         </div>

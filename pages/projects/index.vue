@@ -6,7 +6,7 @@
 
             <div class="btn-group w-3/5 lg:w-2/4 btn-group-horizontal justify-center">
                 <button @click="toggleSpotlight(true)" class="btn btn-outline btn-block text-lg"
-                    :class="{ 'btn-active': spotlight }">SPOTLIGHT</button>
+                    :class="{ 'btn-active': spotlight }">RELEVANT</button>
                 <button @click="toggleAll()" class="btn btn-outline btn-block text-lg"
                     :class="{ 'btn-active': !spotlight }">ALL</button>
             </div>
@@ -15,7 +15,7 @@
                 <label class="label">
                     <span class="label-text">Select by area:</span>
                 </label>
-                <select v-model="selectedArea" class="select select-bordered w-full" label="Areas">
+                <select v-model="selectedArea" class="select select-bordered w-full" :class="{ 'select-primary' : selectedArea.value !== '' }" label="Areas">
                     <option value="">All Areas</option>
                     <option v-for="area in areas" :value="area">{{ area }}</option>
                 </select>

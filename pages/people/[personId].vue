@@ -15,7 +15,7 @@
 </div>
 
   <div class="mt-12">
-    <h1>Followed Projects</h1>
+    <h1>Supervised Projects</h1>
     <div class="flex flex-wrap">
       <ProjectCardForPerson v-for="project in person.projects" :key="project.id" :project="project"
         class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2" />
