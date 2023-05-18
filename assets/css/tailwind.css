@@ -68,3 +68,7 @@ h2 {
 p {
     margin: 20px 0;
 }
+
+.badge{
+    @apply hover:scale-110;
+}
