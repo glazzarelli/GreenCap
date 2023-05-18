@@ -31,11 +31,19 @@
             </div>
             <div class="col-start-4">
                 <h6 class="card-subtitle mb-2">Supervisor: </h6>
-                {{ project.person.name }} {{ project.person.name }}
+                <div class="card-actions">
+                
+                <NuxtLink :to="`/people/${project.person.id}`">
+                    <div class="badge badge-secondary">
+                        {{ project.person.name }} {{ project.person.surname }}
+                    </div>
+                </NuxtLink>
+            
+    </div>
             </div>
             <div class="col-span-4 row-start-2">{{ project.descriptionLong }}</div>
         </div>
-
+       
     </div>
 </template>
 

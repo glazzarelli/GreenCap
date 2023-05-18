@@ -9,13 +9,8 @@
       <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
         <div class="flex flex-col mb-10 lg:items-start items-center">
           <div class="flex-grow">
-            <h2 class="text-lg title-font font-medium mb-3">{{area.descriptionShort}}</h2>
-            <button class="mt-3 text-indigo-600 inline-flex items-center" @click="expand = !expand">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-            <p v-if="expand" class="mt-3 text-gray-600">{{area.descriptionLong}}</p>
+            <h2 class="text-lg title-font font-medium mb-3">{{area.descriptionLong}}</h2>
+            <p class="items-end">In this area we already invested:  {{ area.totalInvestment }} €</p>
           </div>
         </div>
       </div>
