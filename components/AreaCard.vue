@@ -10,9 +10,14 @@
                 <p class="items-end">In this area we already invested:  {{ area.totalInvestment }} €</p>
                 <p class="items-end">Projects in this area</p>
                 <div class="card-actions justify-end">
-                    <button class="badge badge-secondary" v-for="project in area.projects" :key="project.id">
-                        {{ project.name }}</button>
+                <div v-for="project in area.projects" :key="project.id">
+                    <NuxtLink :to="`/projects/${project.id}`">
+                        <div class="badge badge-secondary">
+                            {{ project.name }}
+                        </div>
+                    </NuxtLink>
                 </div>
+            </div>
             </div>
         </div>
     </NuxtLink>
