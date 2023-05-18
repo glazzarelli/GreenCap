@@ -39,9 +39,22 @@
                     </div>
                 </NuxtLink>
             
-    </div>
+                </div>
             </div>
-            <div class="col-span-4 row-start-2">{{ project.descriptionLong }}</div>
+            <div class="col-start-5">
+            <h6 class="card-subtitle mb-2">Areas: </h6>
+            <div class="card-actions">
+                <div v-for="area in project.areas" :key="area">
+                    <NuxtLink :to="`/areas/${area.id}`">
+                        <div class="badge badge-secondary">
+                            {{ area.name }}
+                        </div>
+                    </NuxtLink>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-span-5 row-start-2">{{ project.descriptionLong }}</div>
         </div>
        
     </div>
