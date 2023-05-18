@@ -7,6 +7,8 @@
             <div class="card-body md:w-1/2">
                 <h2 class="card-title">{{ props.area.name }}</h2>
                 <p class="">{{ props.area.descriptionShort }}</p>
+                <p class="items-end">In this area we already invested:  {{ area.totalInvestment }} €</p>
+                <p class="items-end">Projects in this area</p>
                 <div class="card-actions justify-end">
                     <button class="badge badge-secondary" v-for="project in area.projects" :key="project.id">
                         {{ project.name }}</button>
