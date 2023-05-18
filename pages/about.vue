@@ -11,6 +11,7 @@
     <section class="py-6">
         <div class="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
             <h1 class="text-4xl font-bold leading-none text-center sm:text-5xl">The logo</h1>
+            <IconLogo class="h-20"/>
             <p class="max-w-2xl text-center dark:text-gray-400">Our logo represents the essence and vision of our joint venture, embodying the union between technology and the environment to create an inseparable bond. 
             Let us take you on a journey behind the creation of our logo.The design begins with the letters "G" and "C," which are the initials of our joint venture's name. 
             These letters symbolize our commitment to green technology and the collaborative spirit that drives our work. The "C" represents the technological aspect, reflecting innovation, progress, and cutting-edge solutions. 
@@ -18,7 +19,6 @@
             The merging of the "G" and the "C" signifies the unbreakable bond we create between technology and the environment. It represents the synergy we foster, where advancements in technology are harnessed to address environmental challenges and promote sustainable practices.</p>
 
         </div>
-    
     </section>
 
 
@@ -42,7 +42,7 @@
                 </div>
                 <div class="flex flex-col justify-center m-8 text-center">
                     <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full "
-                        src="https://source.unsplash.com/100x100/?portrait?3">
+                        src="https://avatars.githubusercontent.com/u/53084810?v=4">
                     <p class="text-xl font-semibold leading-tight">Luca Zanotto</p>
                     <p class="dark:text-gray-400">Computer Science Engineering</p>
                 </div>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="flex flex-col justify-center m-8 text-center">
                     <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full "
-                        src="https://source.unsplash.com/100x100/?portrait?5">
+                        src="https://avatars.githubusercontent.com/u/102237556?v=4">
                     <p class="text-xl font-semibold leading-tight">Martina Del Basso</p>
                     <p class="dark:text-gray-400">Mathematical Engineering</p>
                 </div>

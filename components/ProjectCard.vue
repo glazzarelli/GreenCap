@@ -9,8 +9,8 @@
                 {{ project.name }}
             </h2>
             <p>{{ project.descriptionShort }}</p>
-            <p class="items-end">Minimum investment:   {{ project.investment }} €</p>
-            <p class="items-end">Areas</p>
+            <p>Minimum investment: {{ project.investment }} €</p>
+            <p>Areas</p>
             <div class="card-actions justify-end">
                 <div v-for="area in project.areas" :key="area">
                     <NuxtLink :to="`/areas/${area.id}`">
