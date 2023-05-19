@@ -1,12 +1,12 @@
 <template>
     <div class="card">
         <NuxtLink :to="`/projects/${project.id}`">
-        <img :src="`/images/projects/${project.image}`" alt="Startup Logo" class="card-img-top" />
-        <div class="card-body">
-            <h5 class="card-title">{{ project.name }}</h5>
-            <p class="card-text">{{ project.descriptionShort }}</p>
-        </div>
-    </NuxtLink>
+            <img :src="`/images/projects/${project.image}`" alt="Startup Logo" class="card-img-top" />
+            <div class="card-body">
+                <h5 class="card-title">{{ project.name }}</h5>
+                <p class="card-text">{{ project.descriptionShort }}</p>
+            </div>
+        </NuxtLink>
     </div>
 </template>
 
