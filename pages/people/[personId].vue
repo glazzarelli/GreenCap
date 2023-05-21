@@ -1,18 +1,12 @@
 <template>
   <Heading :title="`People / ` + person.name + ' ' + person.surname" />
-  <div class="grid sm:grid-cols-2 gap-4">
-    <div class="shadow-lg rounded-lg p-5">
-    <img class="w-full rounded-md" :src="`/images/people/${person.image}`" alt="Image description">
-    <!-- <h2 class="text-xl font-bold mt-4">{{person.motto}}</h2> -->
-    <!-- Additional info here -->
-    </div>
-    <div class="shadow-sm rounded-lg p-5">
-      <blockquote class="italic text-center text-4xl font-serif mt-10 mb-24">
-          "{{person.motto}}"
-      </blockquote>
-      <h2>{{ person.cv }}</h2>
-    </div>
-</div>
+    
+  <div class="mt-10 mb-18">
+    <img class="rounded-md lg:float-left lg:h-1/3 lg:w-1/3 mr-8 shadow-lg lg:max-h-screen lg:object-cover" :src="`/images/people/${person.image}`" alt="Person Image">
+    <p class="italic text-center text-4xl font-serif pl-6 pr-6 mb-8">"{{person.motto}}"</p>
+    <h2>{{ person.cv }}</h2>
+  </div>
+
 
   <div class="mt-12">
     <h1>Supervised Projects</h1>

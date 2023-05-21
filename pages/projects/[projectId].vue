@@ -1,64 +1,46 @@
 <!-- Project page -->
+<!-- responsivness brakepoints 640-768-1024 -->
 <template>
     <Heading :title="`Projects / ` + project.name" />
-    <div>
-        <div class="grid grid-cols-4 grid-rows-2 gap-12">
-            <div class="col-span-2">
-                <div
-                    class="relative grid h-[25rem] w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
-                    <div
-                        class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-gradient-to-r from-cyan-500 to-blue-500 bg-cover bg-clip-border bg-center text-gray-700 shadow-none">
-                        <div
-                            class="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50">
-                        </div>
-                    </div>
-                    <div class="relative p-6 py-14 px-6 md:px-12">
-                        <h5
-                            class="mb-4 block font-sans text-xl font-semibold leading-snug tracking-normal text-gray-400 antialiased">
+    <section class="px-4 sm:px-6 lg:px-8 py-14 mx-auto">
+        <div class="flex flex-wrap">
+            <figure class="lg:w-1/3 lg:min-w-[360px] w-full h-full object-center md:mx-auto lg:mt-6" alt="project image">
+                <img :src="`/images/projects/${project.image}`" class="mx-auto object-cover rounded" />
+            </figure>
 
-                            <p> {{ project.name }}</p>
-                        </h5>
-                        <img alt="startup logo" src="~/assets/images/placeholder.png"
-                            class="relative inline-block p-1  h-[200px] w-[200px] rounded-full border-2 border-white object-cover object-center" />
-                    </div>
+            <div class="lg:w-2/3 w-full md:mx-auto md:mt-8 lg:px-5 py-0 mt-6 flex flex-wrap md:flex-nowrap">
+                <!-- first column -->
+                <div class="lg:w-2/3 w-full">
+                    <p class="leading-relaxed mt-0">{{project.descriptionLong}}</p>
                 </div>
-            </div>
-            <div class="col-start-3">
-                <h6 class="card-subtitle mb-2">Team Members:</h6>
-                <ul>
-                    <li v-for="member in project.team" :key="member">{{ member }}</li>
-                </ul>
-            </div>
-            <div class="col-start-4">
-                <h6 class="card-subtitle mb-2">Supervisor: </h6>
-                <div class="card-actions">
-                
-                <NuxtLink :to="`/people/${project.person.id}`">
-                    <div class="badge badge-secondary">
-                        {{ project.person.name }} {{ project.person.surname }}
-                    </div>
-                </NuxtLink>
-            
-                </div>
-            </div>
-            <div class="col-start-5">
-            <h6 class="card-subtitle mb-2">Areas: </h6>
-            <div class="card-actions">
-                <div v-for="area in project.areas" :key="area">
-                    <NuxtLink :to="`/areas/${area.id}`">
-                        <div class="badge badge-secondary">
-                            {{ area.name }}
+                <!-- new column -->
+                <div class="lg:w-1/3 w-full flex flex-col items-center mt-4">
+                <h2 class="mb-5">Supervisor: {{ project.person.name }}  {{ project.person.surname }}</h2>
+                    <nuxt-link :to="`/people/${project.person.id}`"> 
+                        <div class="avatar">
+                            <div class="w-48 h-48 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <img :src="`/images/people/${project.person.image}`" alt="Supervisor image" class="object-cover rounded-full"/>
+                            </div>
                         </div>
-                    </NuxtLink>
+                    </nuxt-link>
+                    <div class="flex mt-6 pb-5 border-b-2 border-gray-100 mb-5">
+                        <p class="mt-0">team Members: </p>
+                        <div>
+                        <ol>
+                            <li v-for="(member, index) in project.team" :key="member">
+                                {{ member }}
+                            </li>
+                        </ol>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-            <div class="col-span-5 row-start-2">{{ project.descriptionLong }}</div>
-        </div>
-       
-    </div>
+    </section>
 </template>
+
+
+
 
 <script setup>
 //passed via link

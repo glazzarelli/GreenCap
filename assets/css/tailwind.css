@@ -27,7 +27,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-
 }
 
 .navbar-start {
@@ -71,3 +70,10 @@ p {
 .badge{
     @apply hover:scale-110;
 }
+
+/* @media screen and (min-aspect-ratio: 16/10) {
+    .aspect-ratio-full-width {
+      background: #d18282;;
+    }
+  } */
+  
