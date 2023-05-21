@@ -1,6 +1,27 @@
 module.exports = {
+  theme: {
+    extend: {
+      spacing: {
+        '1/2': '50%',
+        '1/3': '33.333333%',
+        '2/3': '66.666667%',
+        '1/4': '25%',
+        '2/4': '50%',
+        '3/4': '75%',
+        '1/5': '20%',
+        '2/5': '40%',
+        '3/5': '60%',
+        '4/5': '80%',
+        '1/6': '16.666667%',
+        '2/6': '33.333333%',
+        '3/6': '50%',
+        '4/6': '66.666667%',
+        '5/6': '83.333333%',
+      },
+    },
+  },
+  variants: {},
   plugins: [require("daisyui")],
-
   daisyui: {
     themes: [
       {
@@ -14,16 +35,16 @@ module.exports = {
           "success": "#4DD5A6",
           "warning": "#F1BE5F",
           "error": "#DE4135",
-          "--rounded-box": "0.25rem", // border radius rounded-box utility class, used in card and other large boxes
-          "--rounded-btn": "0.25rem", // border radius rounded-btn utility class, used in buttons and similar element
-          "--rounded-badge": "0.5rem", // border radius rounded-badge utility class, used in badges and similar
-          "--animation-btn": "0.25s", // duration of animation when you click on button
-          "--animation-input": "0.2s", // duration of animation for inputs like checkbox, toggle, radio, etc
-          "--btn-text-case": "uppercase", // set default text transform for buttons
-          "--btn-focus-scale": "0.95", // scale transform of button when you focus on it
-          "--border-btn": "0.5px", // border width of buttons
-          "--tab-border": "0.5px", // border width of tabs
-          "--tab-radius": "0.5rem", // border radius of tabs
+          "--rounded-box": "0.25rem",
+          "--rounded-btn": "0.25rem",
+          "--rounded-badge": "0.5rem",
+          "--animation-btn": "0.25s",
+          "--animation-input": "0.2s",
+          "--btn-text-case": "uppercase",
+          "--btn-focus-scale": "0.95",
+          "--border-btn": "0.5px",
+          "--tab-border": "0.5px",
+          "--tab-radius": "0.5rem",
         },
         dark: {
           "primary": "#1EB854",
@@ -35,16 +56,16 @@ module.exports = {
           "success": "#36D399",
           "warning": "#FBBD23",
           "error": "#F87272",
-          "--rounded-box": "0.25rem", // border radius rounded-box utility class, used in card and other large boxes
-          "--rounded-btn": "0.25rem", // border radius rounded-btn utility class, used in buttons and similar element
-          "--rounded-badge": "0.5rem", // border radius rounded-badge utility class, used in badges and similar
-          "--animation-btn": "0.25s", // duration of animation when you click on button
-          "--animation-input": "0.2s", // duration of animation for inputs like checkbox, toggle, radio, etc
-          "--btn-text-case": "uppercase", // set default text transform for buttons
-          "--btn-focus-scale": "0.95", // scale transform of button when you focus on it
-          "--border-btn": "0.5px", // border width of buttons
-          "--tab-border": "0.5px", // border width of tabs
-          "--tab-radius": "0.5rem", // border radius of tabs
+          "--rounded-box": "0.25rem",
+          "--rounded-btn": "0.25rem",
+          "--rounded-badge": "0.5rem",
+          "--animation-btn": "0.25s",
+          "--animation-input": "0.2s",
+          "--btn-text-case": "uppercase",
+          "--btn-focus-scale": "0.95",
+          "--border-btn": "0.5px",
+          "--tab-border": "0.5px",
+          "--tab-radius": "0.5rem",
         },
       },
     ],

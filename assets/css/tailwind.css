@@ -7,7 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {}
 
 @layer components {
     .card:hover {
@@ -22,12 +21,12 @@ body {}
     flex-direction: row;
     justify-content: center;
     align-content: flex-start;
-    gap: 20px;
+    gap: 0.8em;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 
 }
 
@@ -38,7 +37,7 @@ body {
 
 header {
     font-family: 'Not Sans Mono', monospace;
-    font-size: 14px;
+    font-size: 14px; 
     text-transform: uppercase;
 }
 
@@ -47,7 +46,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-content: flex-start;
-    gap: 10px;
+    gap: 0.5em;
 }
 
 /* change to primary */
@@ -66,7 +65,7 @@ h2 {
 }
 
 p {
-    margin: 20px 0;
+    margin: 0.8rem 0;
 }
 
 .badge{
