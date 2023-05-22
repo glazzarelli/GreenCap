@@ -12,7 +12,24 @@
                 <!-- first column -->
                 <div class="lg:w-2/3 w-full">
                     <p class="leading-relaxed mt-0">{{project.descriptionLong}}</p>
+                    
+                    <div class="col-start-5">
+                    <h6 class="card-subtitle mb-2">Areas: </h6>
+                    <div class="card-actions">
+                    <div v-for="area in project.areas" :key="area">
+                        <NuxtLink :to="`/areas/${area.id}`">
+                            <div class="badge badge-secondary">
+                                {{ area.name }}
+                            </div>
+                        </NuxtLink>
+                    </div>
+                    </div>
+             </div>
                 </div>
+                
+
+
+
                 <!-- new column -->
                 <div class="lg:w-1/3 w-full flex flex-col items-center mt-4">
                 <h2 class="mb-5">Supervisor: {{ project.person.name }}  {{ project.person.surname }}</h2>
