@@ -23,9 +23,13 @@
                             </div>
                         </NuxtLink>
                     </div>
-                    </div>
-             </div>
+
+                    <p class="items-end" style="font-weight: bold; font-size: 18px;">
+                    In this area the minimum investment is: {{ project.investment }} €
+                    </p>
                 </div>
+             </div>
+        </div>
                 
 
 
@@ -42,9 +46,11 @@
                     </nuxt-link>
                     <div class="flex mt-6 pb-5 border-b-2 border-gray-100 mb-5">
                         <p class="mt-0">team Members: </p>
+                        
                         <div>
                         <ol>
-                            <li v-for="(member, index) in project.team" :key="member">
+                        <br>
+                            <li v-for=" (member, index) in project.team" :key="member">
                                 {{ member }}
                             </li>
                         </ol>
