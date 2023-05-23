@@ -10,7 +10,7 @@
         <div class="flex flex-col mb-10 lg:items-start items-center">
           <div class="flex-grow">
             <h2 class="text-lg title-font font-medium mb-3">{{area.descriptionLong}}</h2>
-            <p class="items-end">In this area we already invested:  {{ area.totalInvestment }} €</p>
+            <p class="items-end" style="font-weight: bold; font-size: 18px;">In this area we already invested:  {{ area.totalInvestment }} €</p>
           </div>
         </div>
       </div>
