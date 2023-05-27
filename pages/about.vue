@@ -66,7 +66,35 @@
 
 
 <script setup>
-
+    // Add page title
+    
+    onMounted(() => {
+        useHead({
+            title: 'About Us - GreenCapital',
+            meta: [
+                // Add page description
+                {
+                    name: 'description',
+                    content: 'Learn more about us and our joint venture committed to driving innovation in the green technology sector and promoting sustainable solutions.',
+                },
+                // Add page keywords
+                {
+                    name: 'keywords',
+                    content: 'about us, green technology, sustainable solutions, joint venture',
+                },
+                // Set the page content type
+                {
+                    property: 'og:type',
+                    content: 'website',
+                },
+                // Add your website as the author
+                {
+                    name: 'Gabriele Lazzarelli, Luca Zanotto, Martina Del Basso, Francesca Arrigoni ',
+                    content: 'GreenCapital',
+                },
+            ],
+        })
+    })
 </script>
 
 <style scoped>   
