@@ -68,7 +68,7 @@
 <script setup>
     // Add page title
     
-    onMounted(() => {
+    
         useHead({
             title: 'About Us - GreenCapital',
             meta: [
@@ -94,7 +94,7 @@
                 },
             ],
         })
-    })
+    
 </script>
 
 <style scoped>   
