@@ -52,6 +52,29 @@
 <script setup>
     import useEmailValidation from '@/composables/useEmailValidation';
     const { email, emailError } = useEmailValidation();
+    
+    onMounted(() => {
+        useHead({
+            title: 'Contact Us - GreenCapital',
+            meta: [
+                // Add page description
+                {
+                    name: 'description',
+                    content: 'Contact us for inquiries, feedback, or any other questions you may have. Get in touch with our team and we will be happy to assist you.',
+                },
+                // Add page keywords
+                {
+                    name: 'keywords',
+                    content: 'contact us, inquiries, feedback, customer support',
+                },
+                // Add your website as the author
+                {
+                    name: 'Gabriele Lazzarelli, Luca Zanotto, Martina Del Basso, Francesca Arrigoni',
+                    content: 'GreenCapital',
+                },
+            ],
+        })
+    })
 </script>
 
 <style scoped></style>
