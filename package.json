@@ -15,10 +15,12 @@
     "nuxt": "^3.4.3"
   },
   "dependencies": {
+    "chart.js": "^4.3.0",
     "daisyui": "^2.51.6",
     "express": "^4.18.2",
     "lorem-ipsum": "^2.0.8",
     "sequelize": "^6.31.0",
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^5.1.6",
+    "vue-chartjs": "^5.2.0"
   }
 }
