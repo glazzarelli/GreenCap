@@ -36,12 +36,9 @@ onMounted(() => {
       }
     );
 
-    hiddenElements.value.forEach((element) => {
-      observer.observe(element);
-    });
-  });
+definePageMeta({
+   layout: 'custom',
 });
 </script>
 
-
-  
+<style scoped></style>

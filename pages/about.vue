@@ -68,6 +68,7 @@
 
 
 <script setup>
+<<<<<<< HEAD
 
 let sections = ref([]);
 
@@ -100,6 +101,14 @@ onMounted(() => { //run after the DOM has been mounted
 useHead({
         title: 'About Us - GreenCapital',
         meta: [
+=======
+    // Add page title
+    
+    
+        useHead({
+            title: 'About Us - GreenCapital',
+            meta: [
+>>>>>>> 0366fcef2bade9548e0fedd5e04146df490d888b
                 // Add page description
                 {
                     name: 'description',
@@ -122,6 +131,10 @@ useHead({
                 },
             ],
         })
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 0366fcef2bade9548e0fedd5e04146df490d888b
 </script>
 
 <style scoped>
