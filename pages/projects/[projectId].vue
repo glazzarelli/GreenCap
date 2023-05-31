@@ -8,7 +8,7 @@
                 <img :src="`/images/projects/${project.image}`" class="mx-auto object-cover rounded" />
             </figure>
 
-            <div class="lg:w-2/3 w-full md:mx-auto md:mt-8 lg:px-5 py-0 mt-6 flex flex-wrap md:flex-nowrap">
+            <div class="lg:w-2/3 w-full md:mx-auto md:mt-8 lg:px-5 py-0 mt-4 flex flex-wrap md:flex-nowrap">
                 <!-- first column -->
                 <div class="lg:w-2/3 w-full">
                     <p class="leading-relaxed mt-0">{{project.descriptionLong}}</p>
@@ -30,12 +30,8 @@
                 </div>
              </div>
         </div>
-                
-
-
-
                 <!-- new column -->
-                <div class="lg:w-1/3 w-full flex flex-col items-center mt-4">
+                <div class="lg:w-1/3 w-full flex flex-col items-center mt-3">
                 <h2 class="mb-5">Supervisor: {{ project.person.name }}  {{ project.person.surname }}</h2>
                     <nuxt-link :to="`/people/${project.person.id}`"> 
                         <div class="avatar">
