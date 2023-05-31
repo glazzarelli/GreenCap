@@ -53,7 +53,7 @@
     import useEmailValidation from '@/composables/useEmailValidation';
     const { email, emailError } = useEmailValidation();
     
-    
+    onMounted(() => {
         useHead({
             title: 'Contact Us - GreenCapital',
             meta: [
@@ -74,7 +74,7 @@
                 },
             ],
         })
-    
+    })
 </script>
 
 <style scoped></style>
