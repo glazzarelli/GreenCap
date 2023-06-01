@@ -12,7 +12,7 @@
                 <div class="lg:w-2/3 w-full">
                     <p class="leading-relaxed mt-0">{{project.descriptionLong}}</p>
                     <div class="col-start-5">
-                    <h6 class="card-subtitle mb-2">Areas: </h6>
+                    <h2 class="card-subtitle mb-2">Areas: </h2>
                     <div class="card-actions">
                     <div v-for="area in project.areas" :key="area">
                         <NuxtLink :to="`/areas/${area.id}`">
@@ -37,16 +37,16 @@
                             </div>
                         </div>
                     </nuxt-link>
+                    <br>
+                    <p class="mt-0">Team Members: </p> 
                     <div class="flex mt-6 pb-5 border-b-2 border-gray-100 mb-5">
-                        <p class="mt-0">team Members: </p>                       
-                        <div>
+                                            
                         <ol>
-                        <br>
                             <li v-for=" (member, index) in project.team" :key="member">
                                 {{ member }}
                             </li>
                         </ol>
-                    </div>
+                    
                     </div>
                 </div>
             </div>
@@ -84,5 +84,6 @@ useHead({
             ],
         })
 </script>
+
 
 <style scoped></style>
