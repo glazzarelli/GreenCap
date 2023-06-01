@@ -23,7 +23,7 @@
             </div>
             <div class="lg:w-1/3 md:w-1/2 bg-base-100 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
                 <h2 class="text-lg mb-1 font-medium title-font">Feedback</h2>
-                <p class="leading-relaxed mb-5 ">Post-ironic portland shabby chic echo park, banjo fashion axe
+                <p class="leading-relaxed mb-5 ">Please leave us a note and we'll get back to you via email
                 </p>
                 <div class="relative mb-2">
                     <label for="email" class="leading-7 text-sm ">Email</label>
