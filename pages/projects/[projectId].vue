@@ -71,7 +71,7 @@ if(!project.value){
 }
 
 useHead({
-            title: 'Project - GreenCapital',
+            title: 'Projects - GreenCapital',
             meta: [
                 // Add page description
                 {

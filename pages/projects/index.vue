@@ -99,7 +99,7 @@ const filteredProjects = computed(() => {
 })
 
 useHead({
-            title: 'Project - GreenCapital',
+            title: 'Projects - GreenCapital',
             meta: [
                 // Add page description
                 {
