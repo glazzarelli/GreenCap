@@ -1,13 +1,10 @@
 <template>
   <Heading :title="`People / ` + person.name + ' ' + person.surname" />
-    
   <div class="mt-10 mb-18">
     <img class="rounded-md lg:float-left lg:h-1/3 lg:w-1/3 mr-8 mb-2 shadow-lg lg:max-h-screen lg:object-cover" :src="`/images/people/${person.image}`" alt="Person Image">
     <p class="italic text-center text-4xl font-serif pl-6 pr-6 mb-8">"{{person.motto}}"</p>
     <h2>{{ person.cv }}</h2>
   </div>
-
-
   <div class="mt-12">
     <h1>Supervised Projects</h1>
     <div class="flex flex-wrap">
@@ -16,7 +13,6 @@
     </div>
   </div>
 </template>
-
 
 <script setup>
 useHead({

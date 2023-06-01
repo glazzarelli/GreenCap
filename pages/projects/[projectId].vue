@@ -7,12 +7,10 @@
             <figure class="lg:w-1/3 lg:min-w-[360px] w-full h-full object-center md:mx-auto lg:mt-6" alt="project image">
                 <img :src="`/images/projects/${project.image}`" class="mx-auto object-cover rounded" />
             </figure>
-
             <div class="lg:w-2/3 w-full md:mx-auto md:mt-8 lg:px-5 py-0 mt-4 flex flex-wrap md:flex-nowrap">
                 <!-- first column -->
                 <div class="lg:w-2/3 w-full">
                     <p class="leading-relaxed mt-0">{{project.descriptionLong}}</p>
-                    
                     <div class="col-start-5">
                     <h6 class="card-subtitle mb-2">Areas: </h6>
                     <div class="card-actions">
@@ -23,7 +21,6 @@
                             </div>
                         </NuxtLink>
                     </div>
-
                     <p class="items-end" style="font-weight: bold; font-size: 18px;">
                     In this area the minimum investment is: {{ project.investment }} €
                     </p>
@@ -41,8 +38,7 @@
                         </div>
                     </nuxt-link>
                     <div class="flex mt-6 pb-5 border-b-2 border-gray-100 mb-5">
-                        <p class="mt-0">team Members: </p>
-                        
+                        <p class="mt-0">team Members: </p>                       
                         <div>
                         <ol>
                         <br>
@@ -57,9 +53,6 @@
         </div>
     </section>
 </template>
-
-
-
 
 <script setup>
 //passed via link

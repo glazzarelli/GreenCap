@@ -22,7 +22,6 @@
         </div>
     </section>
 
-
     <section ref="sections" class="py-2">
         <div class="container flex flex-col items-center justify-center p-4 mx-auto space-y-4 sm:p-5">
             <h1 class="text-4xl font-bold leading-none text-center sm:text-5xl ">Our team</h1>
@@ -65,10 +64,7 @@
     </section>
 </template>
 
-
-
 <script setup>
-
 let sections = ref([]);
 
 onMounted(() => { //run after the DOM has been mounted
@@ -130,12 +126,10 @@ useHead({
         transform: translateY(20px); /*move the section 20px down */
         transition: all 1s ease; /*transition effect any change to opacity and trasfrom should happend in 1s with ease */
         }
-
         section.active {
         opacity: 1;
         transform: translateY(0px); /*move the section to original position */
         }
-
         .mt-8 {
             margin-top: 4rem; 
         }
