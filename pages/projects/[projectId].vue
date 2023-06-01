@@ -69,6 +69,27 @@ if(!project.value){
   //inside the createError function we can pass an object used as a prop by Error.vue
   throw createError({statusCode: 404, statusMessage: 'Project not found', fatal: true});
 }
+
+useHead({
+            title: 'Project - GreenCapital',
+            meta: [
+                // Add page description
+                {
+                    name: 'description',
+                    content: 'Discover our innovative projects that showcase our commitment to excellence and innovation. Our projects encompass a wide range of industries and demonstrate our expertise in delivering exceptional solutions. ',
+                },
+                // Add page keywords
+                {
+                    name: 'keywords',
+                    content: 'innovations, expertise, team, success',
+                },
+                // Add your website as the author
+                {
+                    name: 'Gabriele Lazzarelli, Luca Zanotto, Martina Del Basso, Francesca Arrigoni',
+                    content: 'GreenCapital',
+                },
+            ],
+        })
 </script>
 
 <style scoped></style>

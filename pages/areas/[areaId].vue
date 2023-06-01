@@ -39,4 +39,26 @@ if(!area.value){
  }
 
 //const path = area.name.replace(' ', '-');
+
+
+useHead({
+            title: 'Areas - GreenCapital',
+            meta: [
+                // Add page description
+                {
+                    name: 'description',
+                    content: 'The purpose of a area page is to provide visitors with an overview of the areas involved in our company',
+                },
+                // Add page keywords
+                {
+                    name: 'keywords',
+                    content: 'projects, opportunities, investment, features',
+                },
+                // Add your website as the author
+                {
+                    name: 'Gabriele Lazzarelli, Luca Zanotto, Martina Del Basso, Francesca Arrigoni',
+                    content: 'GreenCapital',
+                },
+            ],
+        })
 </script>
