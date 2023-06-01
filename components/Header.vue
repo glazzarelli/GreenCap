@@ -1,6 +1,6 @@
 <template>
     <header class="sticky top-0 z-50">
-        <nav class="navbar bg-base-100 border-b border-[primary]">
+        <nav class="navbar bg-base-200 border-b border-[primary]">
             <div class="navbar-start ">
                 <NuxtLink to="/" class="btn btn-ghost normal-case text-xl mx-1">
                     GREENCAPITAL
