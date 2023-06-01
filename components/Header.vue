@@ -27,9 +27,11 @@
                         </li>
                     </ul>
                 </div>
-                <label class="swap swap-rotate md:mr-5">
+                <label class="swap swap-rotate md:mr-5" for="check">
                     <!-- this hidden checkbox controls the state -->
-                    <input type="checkbox" @change="toggleTheme" aria-labelledby="checkbox"/>
+            
+                    <input type="checkbox" @change="toggleTheme" id="check" name="Check"/>
+                    
                     <!-- sun icon -->
                     <svg class="swap-on fill-current w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path

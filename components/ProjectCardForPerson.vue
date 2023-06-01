@@ -3,7 +3,7 @@
         <NuxtLink :to="`/projects/${project.id}`">
             <img :src="`/images/projects/${project.image}`" alt="Startup Logo" class="card-img-top" />
             <div class="card-body">
-                <h5 class="card-title">{{ project.name }}</h5>
+                <h2 class="card-title">{{ project.name }}</h2>
                 <p class="card-text">{{ project.descriptionShort }}</p>
             </div>
         </NuxtLink>
