@@ -41,6 +41,13 @@
       });
     });
   });
+
+  //SEO
+  definePageMeta({
+   layout: 'custom',
+   title: 'Home Page - Greencapital',
+   description: 'Welcome to our website. Explore our themes and customize your experience.'
+  });
   </script>
   
   
