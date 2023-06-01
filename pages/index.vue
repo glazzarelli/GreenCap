@@ -12,8 +12,7 @@
   </template>
   
   <script setup>
-  import { ref, onMounted, nextTick } from 'vue';
-  
+  import { ref, onMounted, nextTick } from 'vue';  
   let hiddenElements = ref([]);
   
   onMounted(() => { 
