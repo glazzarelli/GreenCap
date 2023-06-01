@@ -6,14 +6,14 @@ export default async (models) => {
         {
             name: "Hassan",
             surname: "Santos",
-            image: "liang-gupta.jpg",
+            image: "hassan-santos.jpg",
             cv: "Hassan is a renewable energy engineer with over 10 years of experience in project development and management. He has a degree in mechanical engineering from the University of Cairo and a Master's degree in renewable energy from the Technical University of Munich. Hassan has worked on renewable energy projects in Europe, Africa, and the Middle East, gaining extensive experience in managing wind, solar, and hydroelectric projects.Thanks to his experience, Hassan is capable of managing all aspects of a renewable energy project, from development to construction and commissioning. He has a solid understanding of renewable energy production technologies and their practical applications, allowing him to assess the technical and financial feasibility of projects.Moreover, Hassan is an expert in site assessment, which enables him to identify the best technical and economic solutions for a renewable energy project. He can perform wind and solar radiation analysis and use this information to determine the capacity and feasibility of a project.With his extensive experience and expertise, Hassan is a reliable and highly competent professional who can provide valuable input to any renewable energy project.",
             motto: "I believe that sustainable energy is the key to a better future for all.",
         },
         {
             name: "Fatima",
             surname: "Nakamura",
-            image: "ahmed-ali.jpg",
+            image: "fatima-nakamura.jpg",
             cv: "Fatima is a sustainability specialist with a background in environmental science. She holds a Bachelor's degree in environmental science from the American University of Sharjah and a Master's degree in sustainable development from the University of California, Berkeley. With her strong academic background, Fatima has developed a deep understanding of sustainability issues and the skills necessary to address them effectively.Fatima has worked on sustainability projects in the United Arab Emirates, the United States, and Europe, giving her a broad perspective on the challenges and opportunities in the field. She has experience in developing sustainability strategies, conducting carbon footprint analyses, and assessing the environmental impacts of projects.As a sustainability specialist, Fatima is skilled in analyzing complex data and using it to identify opportunities for reducing environmental impact and enhancing sustainability performance. She has experience in designing and implementing sustainability programs that help organizations meet their sustainability goals while also improving their bottom line.Fatima is committed to making a positive impact on the environment and society through her work. She is passionate about finding innovative solutions to sustainability challenges and collaborating with others to create a more sustainable future. Her strong analytical and problem-solving skills, combined with her deep commitment to sustainability, make her a valuable asset to any sustainability project or team.",
             motto: "I am committed to finding innovative financing solutions that support sustainable growth."
         },
@@ -259,14 +259,14 @@ export default async (models) => {
         },
         {
             name: "Green and smart building",
-            image: "green-building-and-intelligent-housing.png",
+            image: "green-and-smart-building.png",
             descriptionShort: "Green building is a sustainable approach to construction that helps reduce carbon emissions, save energy, and promote a healthier environment.They also have a significant impact on reducing greenhouse gas emissions and help address the global challenge of climate change. Investing in green buildings is a smart decision for individuals, businesses, and governments looking to promote sustainability and contribute to a better future for all.",
             descriptionLong: "Green building is important as it helps in reducing carbon emissions, conserving energy, and promoting a healthier environment . Buildings account for almost 40% of global energy-related CO2 emissions, and green buildings like those that are LEED certified are an effective solution for reducing this impact . Investing in green building has several economic benefits such as operating cost savings and increased asset value . According to a report, green buildings represent a significant low-carbon investment opportunity of $24.7 trillion by 2030, with most of the construction growth occurring in middle-income countries . Green buildings not only lower energy consumption and operational costs but also achieve higher sale premiums and attract and retain more tenants . By investing in green buildings, governments, developers, and building owners can take the lead in shaping and accelerating this multitrillion-dollar business opportunity, while also promoting a more sustainable and equitable future for all.",
             totalInvestment: 1000000
         },
         {
             name: "Sustainable agriculture",
-            image: "sustainable-agriculture-and-farming.png",
+            image: "sustainable-agriculture.png",
             descriptionShort: "Sustainable agriculture is essential for meeting the world's food demands and reducing the environmental impact of farming. It also leads to economic benefits such as cost reduction, asset value increase, and improved profitability. Overall, investing in sustainable agriculture is crucial for creating a healthier and more equitable world for all.",
             descriptionLong: "Sustainable agriculture plays a crucial role in meeting the food demands of the world's growing population while reducing the environmental impact of farming . It aims to maintain soil fertility, make efficient use of resources and natural cycles, and improve the quality of life for farmers and society, while enhancing environmental quality . Investing in sustainable agriculture can lead to economic benefits such as reducing costs, increasing asset value, and improving profitability . Additionally, sustainable agriculture practices can help minimize animal cruelty, eliminate unsustainable farming practices, and preserve the environment . Therefore, individuals, businesses, and governments should invest in sustainable agriculture to promote a cleaner, more sustainable future for all.",
             totalInvestment: 750000
