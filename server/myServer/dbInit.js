@@ -266,7 +266,7 @@ export default async (models) => {
         },
         {
             name: "Sustainable agriculture",
-            image: "sustainable-agriculture.png",
+            image: "agriculture.png",
             descriptionShort: "Sustainable agriculture is essential for meeting the world's food demands and reducing the environmental impact of farming. It also leads to economic benefits such as cost reduction, asset value increase, and improved profitability. Overall, investing in sustainable agriculture is crucial for creating a healthier and more equitable world for all.",
             descriptionLong: "Sustainable agriculture plays a crucial role in meeting the food demands of the world's growing population while reducing the environmental impact of farming . It aims to maintain soil fertility, make efficient use of resources and natural cycles, and improve the quality of life for farmers and society, while enhancing environmental quality . Investing in sustainable agriculture can lead to economic benefits such as reducing costs, increasing asset value, and improving profitability . Additionally, sustainable agriculture practices can help minimize animal cruelty, eliminate unsustainable farming practices, and preserve the environment . Therefore, individuals, businesses, and governments should invest in sustainable agriculture to promote a cleaner, more sustainable future for all.",
             totalInvestment: 750000
