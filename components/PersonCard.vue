@@ -3,7 +3,7 @@
     <nuxt-link :to="`/people/${person.id}`">
       <div class="card card-compact image-full max-w-md mx-auto">
         <figure class="relative"> 
-          <img :src="`/images/people/${person.image}`" />
+          <img :src="`/images/people/${person.image}`" alt="Person Image"/>
           <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-75 text-white text-center p-2">
             <h2 class="card-title justify-center font-semibold text-shadow">{{ person.name }} {{ person.surname }}</h2>
           </figcaption>
