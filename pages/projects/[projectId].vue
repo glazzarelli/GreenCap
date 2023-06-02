@@ -5,7 +5,7 @@
     <section class="px-4 sm:px-6 lg:px-8 py-14 mx-auto">
         <div class="flex flex-wrap">
             <figure class="lg:w-1/3 lg:min-w-[360px] w-full h-full object-center md:mx-auto lg:mt-6" alt="project image">
-                <img :src="`/images/projects/${project.image}`" class="mx-auto object-cover rounded" />
+                <img :src="`/images/projects/${project.image}`" class="mx-auto object-cover rounded" alt="project image"/>
             </figure>
             <div class="lg:w-2/3 w-full md:mx-auto md:mt-8 lg:px-5 py-0 mt-4 flex flex-wrap md:flex-nowrap">
                 <!-- first column -->
