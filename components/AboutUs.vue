@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="py-4" :class="{ 'slide-in-right': isTextInView }">
           <h2 class="text-3xl font-semibold text-gray-800 mb-6 slide-in">
-            About Us
+            Why choose GreenCapital
           </h2>
           <p class="text-gray-600 text-lg" ref="textParagraph">
             {{ aboutData.description }}
@@ -23,7 +23,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const aboutData = {
   description: "We are a venture capital firm focused on helping startups grow and succeed. Our team brings decades of experience in various industries, and we are passionate about supporting the next generation of entrepreneurs.",
-  image: "../images/other/consultant-speaking.jpg"
+  image: "../images/other/chart3.png"
 }
 
 const textParagraph = ref(null);
