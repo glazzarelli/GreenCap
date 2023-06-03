@@ -30,8 +30,8 @@
                 <label class="swap swap-rotate md:mr-5" for="check">
                     <!-- this hidden checkbox controls the state -->
                     <span style="display: inline-block; vertical-align: middle; margin-left: 32px;">Theme</span>
-                    <input type="checkbox" @change="toggleTheme" id="check" name="Check"/>
-                    
+                    <input type="checkbox" @change="toggleTheme" id="check" name="Check" />
+
                     <!-- sun icon -->
                     <svg class="swap-on fill-current w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path
@@ -44,9 +44,9 @@
                             d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
                     </svg>
                     <span style="display: inline-block; vertical-align: middle; margin-left: 32px;">Theme</span>
-                     </label>
+                </label>
 
-               
+
                 <div class="dropdown dropdown-end">
                     <label tabindex="0" class="btn btn-ghost md:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
@@ -55,21 +55,21 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-normal dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                         <li>
-                            <NuxtLink to="/areas">Areas</NuxtLink>
+                            <NuxtLink onclick="document.activeElement.blur()" to="/areas">Areas</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/projects">Projects</NuxtLink>
+                            <NuxtLink onclick="document.activeElement.blur()" to="/projects">Projects</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/people">People</NuxtLink>
+                            <NuxtLink onclick="document.activeElement.blur()" to="/people">People</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/about">About Us</NuxtLink>
+                            <NuxtLink onclick="document.activeElement.blur()" to="/about">About Us</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink to="/contact">Contact Us</NuxtLink>
+                            <NuxtLink onclick="document.activeElement.blur()" to="/contact">Contact Us</NuxtLink>
                         </li>
                     </ul>
                 </div>
