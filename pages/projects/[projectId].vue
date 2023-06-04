@@ -21,6 +21,7 @@
                             </div>
                         </NuxtLink>
                     </div>
+                    <br>
                     <p class="items-end" style="font-weight: bold; font-size: 18px;">
                     In this area the minimum investment is: {{ project.investment }} €
                     </p>
