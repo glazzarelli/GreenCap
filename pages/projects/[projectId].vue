@@ -20,10 +20,12 @@
                                 {{ area.name }}
                             </div>
                         </NuxtLink>
+                        
                     </div>
-                    <br>
                     <p class="items-end" style="font-weight: bold; font-size: 18px;">
-                    In this area the minimum investment is: {{ project.investment }} €
+                    <br>
+                        
+                        In this project the minimum investment is: {{ project.investment }} €
                     </p>
                 </div>
              </div>
