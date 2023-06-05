@@ -1,6 +1,6 @@
 <template>
     <section ref="sections">
-    <Heading title="About Us" class="mt-8"/>
+    <Heading title="About Us"/>
     <div class="container flex flex-col items-center justify-center p-4 mx-auto space-y-4 sm:p-5">
         <p class="max-w-2xl text-center dark:text-gray-600 mt-2">Welcome to our website! 
         We are a joint venture committed to driving innovation and promoting sustainable solutions in the field of green technology. 
