@@ -86,7 +86,7 @@ export default async (models) => {
 
     const projectModel = [
         {
-            name: "The Artificial Meat",
+            name: "Artificial Meat",
             image: "artificial-meat.png",
             team: ["Bart", "Lisa", "Maggie", "Homer", "Marge"],
             descriptionShort: "Artificial meat offers a sustainable and ethical alternative to traditional meat production",
@@ -161,7 +161,7 @@ export default async (models) => {
             investment: 1000
         },
         {
-            name: "EcoHomes",
+            name: "Eco-Homes",
             image: "eco-homes.png",
             team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
             descriptionShort: "EcoHomes are the new net zero energy buildings. No bills by helping the planet.",
@@ -197,7 +197,7 @@ export default async (models) => {
             investment: 1000
         },
         {
-            name: "Hydrogrow",
+            name: "Hydro-grow",
             image: "hydro-grow.png",
             team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
             descriptionShort: "Hydrogrow specializes in developing and implementing sustainable hydroponic farming solutions for urban agriculture.",
