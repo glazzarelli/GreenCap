@@ -20,28 +20,26 @@ const segments = computed(() => title.split(' / '));
 
 // Get the full route and base route for the current page
 const fullRoute = useRoute().fullPath;
-const baseRoute = fullRoute.split('/').slice(0, 2).join('/');
+const baseRoute = fullRoute.split('/').slice(0, 2).join('/') + '/';
+console.log('Full route: ', fullRoute);
+console.log('Base route: ', baseRoute);
 
 // Compute the routes for each segment of the title
 const routes = computed(() => {
-    //hold the resulting routes
     const result = [];
     let path = '';
-    // Loop through each segment of the title
     segments.value.forEach((segment, index) => {
-        // If this is the first segment, use the base route
         if (index === 0) {
             path = baseRoute;
-        // If this is the second segment, use the full route
         } else if (index === 1) {
             path = fullRoute;
         }
-        // Add the current segment as a route with the current path
         result.push({ name: segment, path });
     });
-    // Return the resulting array of routes
     return result;
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+/* Add your styles here */
+</style>

@@ -4,7 +4,7 @@
     <section>
     <div class="container px-5 py-18 mx-auto flex flex-wrap">
       <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-        <img :src="`../images${baseRoute}/${area.image}`" alt="area image" class="object-cover object-center h-full w-full">
+        <img :src="`/images${baseRoute}/${area.image}`" alt="area image" class="object-cover object-center h-full w-full">
         <!-- <img :src="useAsset(area.value.image)" alt="area image" class="object-cover object-center h-full w-full"/> -->
       </div>
       <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">

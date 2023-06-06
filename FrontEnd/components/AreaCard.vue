@@ -37,10 +37,10 @@ const props = defineProps({
   },
 });
 
-    function getImageUrl(imagename) {
-      const imageUrl = new URL(`/assets/images/${imagename}`, import.meta.url).href
-      return imageUrl;
-    };
+    // function getImageUrl(imagename) {
+    //   const imageUrl = new URL(`/assets/images/${imagename}`, import.meta.url).href
+    //   return imageUrl;
+    // };
 
 const imageSrc = ref('');
 async function loadImage(imagePath) {
@@ -52,13 +52,13 @@ async function loadImage(imagePath) {
       throw new Error('Image not found');
     }
   } catch (error) {
-    // imageSrc.value = `../images/areas/${props.area.image}`;
+    console.log("error detected");
     return `../images/areas/${props.area.image}`; // Return an empty string or a default image path if the image is not found
   }
 }
 
 onMounted(async () => {
-  imageSrc.value = await loadImage(`images/areas/${props.area.image}`);
+  imageSrc.value = await loadImage(`/images/areas/${props.area.image}`);
 });
 
 </script>
