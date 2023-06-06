@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <nuxt-link :to="`/people/${person.id}`">
+    <nuxt-link :to="`/people/${person.id}/`">
       <div class="card card-compact image-full max-w-md mx-auto">
         <figure class="relative"> 
           <img :src ="imageSrc" alt="Person Image"/>

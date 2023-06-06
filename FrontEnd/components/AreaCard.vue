@@ -4,7 +4,7 @@
         <img :src="imageSrc" alt="Area image" class="absolute inset-0 object-cover w-full h-full" />
       </figure>
       <div class="card-body md:w-1/2 py-1 px-5 flex flex-col justify-between">
-                <NuxtLink :to="`/areas/${props.area.id}`">
+                <NuxtLink :to="`/areas/${area.id}/`">
                 <h2 class="card-title">{{ area.name }}</h2>
                 <p class="">{{ area.descriptionShort }}</p>
                 <p class="items-end">In this area we already invested: {{ area.totalInvestment }} €</p>
@@ -37,6 +37,11 @@ const props = defineProps({
   },
 });
 
+    function getImageUrl(imagename) {
+      const imageUrl = new URL(`/assets/images/${imagename}`, import.meta.url).href
+      return imageUrl;
+    };
+
 const imageSrc = ref('');
 async function loadImage(imagePath) {
   try {
@@ -53,7 +58,7 @@ async function loadImage(imagePath) {
 }
 
 onMounted(async () => {
-  imageSrc.value = await loadImage(`/images/areas/${props.area.image}`);
+  imageSrc.value = await loadImage(`images/areas/${props.area.image}`);
 });
 
 </script>

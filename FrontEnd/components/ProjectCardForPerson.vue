@@ -1,7 +1,7 @@
 <template>
     <div class="card">
-        <NuxtLink :to="`/projects/${project.id}`">
-            <img :src="`../images/projects/${project.image}`" alt="Startup Logo" class="card-img-top" />
+        <NuxtLink :to="`/projects/${project.id}/`">
+            <img :src="imageSrc" alt="Startup Logo" class="card-img-top" />
             <div class="card-body">
                 <h2 class="card-title">{{ project.name }}</h2>
                 <p class="card-text">{{ project.descriptionShort }}</p>
@@ -23,12 +23,13 @@ async function loadImage(imagePath) {
     }
   } catch (error) {
     // // imageSrc.value = `../images/areas/${project.image}`;
-    return `./images/projects/${project.image}`; // Return an empty string or a default image path if the image is not found
+    
+    return `../images/projects/${project.image}`; // Return an empty string or a default image path if the image is not found
   }
 }
 
 onMounted(async () => {
-  imageSrc.value = await loadImage(`../images/projects/${project.image}`);
+  imageSrc.value = await loadImage(`/images/projects/${project.image}`);
 });
 </script>
 

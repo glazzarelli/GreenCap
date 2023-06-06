@@ -1,6 +1,6 @@
 <template>
     <div class="card w-96 bg-base-100 shadow-xl">
-        <NuxtLink :to="`/projects/${project.id}`">
+        <NuxtLink :to="`/projects/${project.id}/`">
             <figure><img :src="imageSrc" alt="Startup Logo" /></figure>
         </NuxtLink>
 
@@ -44,7 +44,7 @@ async function loadImage(imagePath) {
 }
 
 onMounted(async () => {
-  imageSrc.value = await loadImage(`/images/projects/${project.image}`);
+  imageSrc.value = await loadImage(`./images/projects/${project.image}`);
 });
 
 </script>
