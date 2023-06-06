@@ -76,7 +76,7 @@ onMounted(() => { //run after the DOM has been mounted
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('active')
-            // Stop observing the current target
+            //Stop observing the current target
             observer.unobserve(entry.target);
           }
         })

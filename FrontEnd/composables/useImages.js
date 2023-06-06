@@ -22,13 +22,7 @@ export default function useImages(imageGroup,imageName) {
     const images = Object.fromEntries(
         Object.entries(glob).map(([key, value]) => [filename(key), value.default])
     );
-    console.log("these are the images"+images);
-    //save the keys of the images in an array
-    const imageKeys = Object.keys(images);
-    console.log("these are the img keys"+imageKeys);
-    //set the dynamic_image_name to the name of the area lowercased with no spaces separated by a -
     const dynamic_image_name = imageName.toLowerCase().split(' ').join('-');
-    console.log("this is the dynamic image name"+dynamic_image_name);
     //return the path of the image with the name of the dynamic_image_name
     return images[dynamic_image_name];
 }

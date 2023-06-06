@@ -11,8 +11,7 @@
   <script>
  import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
  import { Doughnut } from 'vue-chartjs'
- //import 'chartjs-plugin-colorschemes'
-// import { Colors } from 'chart.js';
+
 
 //ChartJS.register(Colors);
 ChartJS.register(ArcElement, Tooltip, Legend)

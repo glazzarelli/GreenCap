@@ -9,9 +9,6 @@
 </template>
 
 <script setup>
-// useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
-// console.log("this is the base url"+useRuntimeConfig().public.baseURL)
-// console.log(useRuntimeConfig().public.baseURL + '/people')
 const { data: people } = await useFetch(useRuntimeConfig().public.baseURL + '/people')
 
 useHead({

@@ -21,8 +21,6 @@ const segments = computed(() => title.split(' / '));
 // Get the full route and base route for the current page
 const fullRoute = useRoute().fullPath;
 const baseRoute = fullRoute.split('/').slice(0, 2).join('/') + '/';
-console.log('Full route: ', fullRoute);
-console.log('Base route: ', baseRoute);
 
 // Compute the routes for each segment of the title
 const routes = computed(() => {

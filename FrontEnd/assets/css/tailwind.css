@@ -10,10 +10,9 @@
 
 @layer components {
     .card:hover {
-        @apply -translate-y-1 scale-[1.01] transition-transform duration-200 ease-in-out;
+        @apply -translate-y-1 scale-[1.01] transition-transform duration-200;
     }
 }
-
 
 .card-container {
     display: flex;
@@ -70,10 +69,4 @@ p {
 .badge{
     @apply hover:scale-110;
 }
-
-/* @media screen and (min-aspect-ratio: 16/10) {
-    .aspect-ratio-full-width {
-      background: #d18282;;
-    }
-  } */
   

@@ -1,23 +1,33 @@
 <template>
   <div class="relative">
     <nuxt-link :to="`/people/${person.id}/`">
-      <div class="card card-compact image-full max-w-md mx-auto">
+      <div class="card card-compact image-full max-w-md mx-auto" :class="{ 'card-hover-opacity': cardHoverOpacity }" @mouseover="removeOpacity" @mouseleave="addOpacity">
         <figure class="relative"> 
-          <img :src ="imageSrc" alt="Person Image"/>
-          <figcaption class="absolute bottom-0 w-full bg-black bg-opacity-75 text-white text-center p-2">
+          <img :src="imageSrc" alt="Person Image"/>
+          <figcaption class="absolute bottom-0 w-full card-no-opacity bg-black text-white text-center p-2" :class="{ 'bg-opacity-75': bgOpacityClass }">
             <h2 class="card-title justify-center font-semibold text-shadow">{{ person.name }} {{ person.surname }}</h2>
           </figcaption>
         </figure>
-        <div class="card-body text-center mt-28">
-        </div>
       </div>
     </nuxt-link>
   </div>
 </template>
-
   
 <script setup>
 import { ref, computed, onMounted } from 'vue';
+
+const cardHoverOpacity = ref(false);
+const showOpacity = ref(true);
+
+//methods to show and hide opacity
+function removeOpacity() {
+  showOpacity.value = false;
+  cardHoverOpacity.value = true;
+}
+function addOpacity() {
+  showOpacity.value = true;
+  cardHoverOpacity.value = false;
+}
 
 const { person } = defineProps({
   person: {
@@ -25,17 +35,6 @@ const { person } = defineProps({
     required: true,
   },
 });
-//solution 1
-const imageUrl = new URL(person.image, useRuntimeConfig().public.baseURL).toString();
-console.log("this is the image url1 "+ imageUrl);
-
-//solution 2
-const { data, pending, error, refresh } = await useFetch('http://localhost:3001/images',{
-  pick: ['person.image']
-});
-
-const imageUrl2 = new URL(person.image, 'https://glazzarelli.github.io/GreenCap/images/people/').toString();
-console.log("this is the image url2"+ imageUrl2);
 
 const imageSrc = ref('');
 async function loadImage(imagePath) {
@@ -58,8 +57,16 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+.card::before {
+  transition: opacity 2s;
+}
+.card-hover-opacity::before {
+  opacity: 0 !important;
+  transition: opacity 2s;
+}
 figcaption h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 </style>
+
   

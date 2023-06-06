@@ -10,8 +10,6 @@
 
 <script setup>
 const { data: areas } = await useFetch(useRuntimeConfig().public.baseURL + '/areas')
-console.log("this is runtime config public baseurl: "+ useRuntimeConfig().public.baseURL)
-//a loop that prints all the areas path requested
 
 useHead({
             title: 'Areas - GreenCapital',

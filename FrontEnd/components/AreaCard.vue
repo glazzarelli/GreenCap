@@ -37,11 +37,6 @@ const props = defineProps({
   },
 });
 
-    // function getImageUrl(imagename) {
-    //   const imageUrl = new URL(`/assets/images/${imagename}`, import.meta.url).href
-    //   return imageUrl;
-    // };
-
 const imageSrc = ref('');
 async function loadImage(imagePath) {
   try {
