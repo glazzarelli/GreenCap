@@ -1,7 +1,7 @@
 <template>
   <Heading :title="`People / ` + person.name + ' ' + person.surname" />
   <div class="mt-10 mb-18">
-    <img :src="`/images/people/${person.image}`" class="rounded-md lg:float-left lg:h-1/3 lg:w-1/3 mr-8 mb-2 shadow-lg lg:max-h-screen lg:object-cover" alt="Person Image">
+    <img :src=imagePath class="rounded-md lg:float-left lg:h-1/3 lg:w-1/3 mr-8 mb-2 shadow-lg lg:max-h-screen lg:object-cover" alt="Person Image">
     <p class="italic text-center text-4xl font-serif pl-6 pr-6 mb-8">"{{person.motto}}"</p>
     <h2>{{ person.cv }}</h2>
   </div>
@@ -15,7 +15,15 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watchEffect } from 'vue';
+import useImages from '@/composables/useImages';
+
+const { personId } = useRoute().params;
+const { data: person } = await useFetch(useRuntimeConfig().public.baseURL + `/people/${personId}`);
+if (!person.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Person not found', fatal: true });
+}
+const imagePath = useImages('people', person.value.image.replace('.jpg', ''));
+
 useHead({
   title: 'People - GreenCapital',
   meta: [
@@ -33,36 +41,6 @@ useHead({
     },
   ],
 })
-
-const { personId } = useRoute().params;
-const { data: person } = await useFetch(useRuntimeConfig().public.baseURL + `/people/${personId}`);
-if (!person.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Person not found', fatal: true });
-}
-
-const imageSrc = ref('');
-
-async function loadImage(imagePath) {
-  try {
-    const response = await fetch(imagePath);
-    if (response.ok) {
-      return imagePath;
-    } else {
-      throw new Error('Image not found');
-    }
-  } catch (error) {
-    console.log("error detected");
-    return `../images/people/${person.image}`; // Return an empty string or a default image path if the image is not found
-  }
-}
-
-onMounted(async () => {
-  watch(person, async (newValue) => {
-    if (newValue.value && newValue.value.image) {
-      imageSrc.value = await loadImage(`../../images/people/${newValue.value.image}`);
-    }
-  });
-});
 </script>
 
 <style scoped>

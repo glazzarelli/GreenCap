@@ -4,7 +4,8 @@
     <section>
     <div class="container px-5 py-18 mx-auto flex flex-wrap">
       <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-        <img :src="`/images${baseRoute}/${area.image}`" alt="area image" class="object-cover object-center h-full w-full">
+        <!-- <img :src="`/images${baseRoute}/${area.image}`" alt="area image" class="object-cover object-center h-full w-full"> -->
+        <img :src=imagePath alt="area image" class="object-cover object-center h-full w-full">
         <!-- <img :src="useAsset(area.value.image)" alt="area image" class="object-cover object-center h-full w-full"/> -->
       </div>
       <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
@@ -29,21 +30,18 @@
 </template>
 
 <script setup>
+//import useImages from composables
+import useImages from '@/composables/useImages';
+
 const expand = ref(false);
 const { areaId } = useRoute().params;
-
-const fullRoute = useRoute().fullPath;
-const baseRoute = fullRoute.split('/').slice(0, 2).join('/');
-console.log('Full route: ', fullRoute);
-console.log('Base route: ', baseRoute);
-console.log('Area id: ', areaId);
-
-//{ data: area } is object destructuring syntax that extracts the data property from the response object
 const { data: area } = await useFetch(useRuntimeConfig().public.baseURL + `/areas/${areaId}`);
+
 if(!area.value){
-   //inside the createError function we can pass an object used as a prop by Error.vue
    throw createError({statusCode: 404, statusMessage: 'Area not found', fatal: true});
  }
+
+const imagePath = useImages('areas',area.value.name);
 
 useHead({
             title: 'Areas - GreenCapital',
