@@ -50,7 +50,7 @@
                 </div>
                 <div class="flex flex-col justify-center m-8 text-center">
                     <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full "
-                        src="https://source.unsplash.com/100x100/?portrait?4">
+                        src="../images/other/francesca.png">
                     <p class="text-xl font-semibold leading-tight">Francesca Arrigoni</p>
                     <p class="dark:text-gray-400">Mathematical Engineering</p>
                 </div>
@@ -111,11 +111,7 @@ useHead({
                     property: 'og:type',
                     content: 'website',
                 },
-                // Add your website as the author
-                {
-                    name: 'Gabriele Lazzarelli, Luca Zanotto, Martina Del Basso, Francesca Arrigoni ',
-                    content: 'GreenCapital',
-                },
+                
             ],
         })
 </script>

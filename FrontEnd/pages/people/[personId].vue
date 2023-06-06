@@ -35,10 +35,7 @@ useHead({
       name: 'keywords',
       content: 'people, expertise, team, profiles',
     },
-    {
-      name: 'Gabriele Lazzarelli, Luca Zanotto, Martina Del Basso, Francesca Arrigoni',
-      content: 'GreenCapital',
-    },
+    
   ],
 })
 </script>
