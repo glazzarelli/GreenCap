@@ -27,11 +27,7 @@ useHead({
                     name: 'keywords',
                     content: 'people, expertise, team, profiles',
                 },
-                // Add your website as the author
-                {
-                    name: 'Gabriele Lazzarelli, Luca Zanotto, Martina Del Basso, Francesca Arrigoni',
-                    content: 'GreenCapital',
-                },
+                
             ],
         })
 </script>
