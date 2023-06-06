@@ -6,8 +6,9 @@
         </div> -->
         <Heading title="Areas" class="mb-0" />
         <div class="card-container">
-            <AreaCard v-for="area in areas" :key="area.id" :area="area"/>
+            <AreaCard v-for="area in areas" :key="area.id" :area="area" :path="`images/areas/${area.image}`"/>
         </div>
+        <!-- <h2>console.log("this is runtime config public baseurl: "+ {{public.baseURL}})</h2> -->
     </div>
 </template>
 

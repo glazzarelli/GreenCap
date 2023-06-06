@@ -11,19 +11,19 @@
                 <div class="hidden md:flex items-end">
                     <ul class="menu menu-horizontal px-1">
                         <li class="margin-auto">
-                            <NuxtLink to="/areas">Areas</NuxtLink>
+                            <NuxtLink to="/areas/">Areas</NuxtLink>
                         </li>
                         <li class="mx-px">
-                            <NuxtLink to="/projects">Projects</NuxtLink>
+                            <NuxtLink to="/projects/">Projects</NuxtLink>
                         </li>
                         <li class="mx-px">
-                            <NuxtLink to="/people">People</NuxtLink>
+                            <NuxtLink to="/people/">People</NuxtLink>
                         </li>
                         <li class="mx-px">
-                            <NuxtLink to="/about">About Us</NuxtLink>
+                            <NuxtLink to="/about/">About Us</NuxtLink>
                         </li>
                         <li class="mx-px">
-                            <NuxtLink to="/contact">Contact Us</NuxtLink>
+                            <NuxtLink to="/contact/">Contact Us</NuxtLink>
                         </li>
                     </ul>
                 </div>

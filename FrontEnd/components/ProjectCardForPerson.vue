@@ -12,10 +12,24 @@
 
 <script setup>
 const { project } = defineProps(['project'])
-console.log('Project id passed to cardForPerson :', project.id);
-console.log('Project image passed to cardForPerson :', project.image);
-//console.log('Project areas :', project.areas);
-//console.log('Project data passed to card :', project.person);
+const imageSrc = ref('');
+async function loadImage(imagePath) {
+  try {
+    const response = await fetch(imagePath);
+    if (response.ok) {
+      return imagePath;
+    } else {
+      throw new Error('Image not found');
+    }
+  } catch (error) {
+    // // imageSrc.value = `../images/areas/${project.image}`;
+    return `./images/projects/${project.image}`; // Return an empty string or a default image path if the image is not found
+  }
+}
+
+onMounted(async () => {
+  imageSrc.value = await loadImage(`../images/projects/${project.image}`);
+});
 </script>
 
 <style scoped>
