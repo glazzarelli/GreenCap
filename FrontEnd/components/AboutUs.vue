@@ -21,7 +21,7 @@
 <script setup>
 const aboutData = {
   description: "We are a venture capital firm focused on helping startups grow and succeed. Our team brings decades of experience in various industries, and we are passionate about supporting the next generation of entrepreneurs.",
-  image: "../images/other/chart3.png"
+  image: "images/other/chart3.png"
 }
 
 const textParagraph = ref(null);

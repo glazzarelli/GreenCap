@@ -1,0 +1,27 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages -d dist --dotfiles"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6.6.7",
+    "@types/node": "^18",
+    "gh-pages": "^5.0.0",
+    "nuxt": "^3.4.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "daisyui": "^2.51.6",
+    "express": "^4.18.2",
+    "lorem-ipsum": "^2.0.8",
+    "sequelize": "^6.31.0",
+    "sqlite3": "^5.1.6"
+  }
+}
