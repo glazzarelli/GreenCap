@@ -1,7 +1,7 @@
 <template>
     <div class="card md:card-side bg-base-100">
       <figure class="w-full md:w-1/3 h-48 md:h-auto relative object-cover object-center rounded">
-        <img :src="imageSrc" alt="Area image" class="absolute inset-0 object-cover w-full h-full" />
+        <img :src=imagePath alt="Area image" class="absolute inset-0 object-cover w-full h-full" />
       </figure>
       <div class="card-body md:w-1/2 py-1 px-5 flex flex-col justify-between">
                 <NuxtLink :to="`/areas/${area.id}/`">
@@ -25,37 +25,10 @@
   
 <script setup>
 import { ref, computed, onMounted } from 'vue';
+import useImages from '@/composables/useImages';
+const { area } = defineProps(['area']);
 
-const props = defineProps({
-  area: {
-    type: Object,
-    required: true,
-  },
-  path: {
-    type: String,
-    required: true,
-  },
-});
-
-const imageSrc = ref('');
-async function loadImage(imagePath) {
-  try {
-    const response = await fetch(imagePath);
-    if (response.ok) {
-      return imagePath;
-    } else {
-      throw new Error('Image not found');
-    }
-  } catch (error) {
-    console.log("error detected");
-    return `../images/areas/${props.area.image}`; // Return an empty string or a default image path if the image is not found
-  }
-}
-
-onMounted(async () => {
-  imageSrc.value = await loadImage(`/images/areas/${props.area.image}`);
-});
-
+const imagePath = useImages('areas',area.image.replace('.png', ''));
 </script>
 
 <style scoped>

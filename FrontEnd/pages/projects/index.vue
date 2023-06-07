@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="card-container" v-if="filteredProjects.length > 0">
-            <ProjectCard v-for="project of filteredProjects" :project="project" />
+            <ProjectCard v-for="project of filteredProjects" :project="project"/>
         </div>
         <div v-else>
             <p class="justify-center flex font-semibold">No projects found</p>
