@@ -10,7 +10,6 @@ import { filename } from 'pathe/utils';
 
 export default function useImages(imageGroup,imageName) {
     let glob;
-    console.log(imageName);
     switch (imageGroup) {
       case 'areas':
         glob = import.meta.glob("~/assets/images/areas/*", { eager: true });
