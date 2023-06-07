@@ -1,1 +1,0 @@
-import{r as t,E as i}from"./entry.243a4834.js";function l(){const e=t(""),a=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,r=i(()=>e.value===""||a.test(e.value)?"":"Please enter a valid email address");return{email:e,emailError:r}}export{l as u};
