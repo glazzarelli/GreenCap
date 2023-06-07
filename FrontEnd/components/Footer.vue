@@ -1,7 +1,7 @@
 <template>
   <footer
     class="footer p-5 bg-base-200 text-base-content max-sm:justify-center items-center max-sm:grid-flow-row max-sm:justify-items-center border-t border-[primary]">
-    <div class="flex flex-col sm:flex-row max-sm:grid-flow-row w-full lg:max-w-[60%]">
+    <div class="flex flex-col sm:flex-row max-sm:grid-flow-row w-full lg:max-w-xl">
       <div class="mx-2 max-sm:grid-flow-row">
         <span class="footer-title mx-1 font-bold text-lg" style="opacity: 1;">Newsletter</span>
         <label class="label">
