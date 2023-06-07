@@ -39,7 +39,7 @@ const { data: area } = await useFetch(useRuntimeConfig().public.baseURL + `/area
 
 if(!area.value){
    throw createError({statusCode: 404, statusMessage: 'Area not found', fatal: true});
- }
+}
 
 const imagePath = useImages('areas',area.value.name);
 

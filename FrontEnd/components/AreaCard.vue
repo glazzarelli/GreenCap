@@ -1,7 +1,9 @@
 <template>
-    <div class="card md:card-side bg-base-100">
+    <div class="card md:card-side bg-base-100"> 
       <figure class="w-full md:w-1/3 h-48 md:h-auto relative object-cover object-center rounded">
+        <NuxtLink :to="`/areas/${area.id}/`">
         <img :src=imagePath alt="Area image" class="absolute inset-0 object-cover w-full h-full" />
+        </NuxtLink>
       </figure>
       <div class="card-body md:w-1/2 py-1 px-5 flex flex-col justify-between">
                 <NuxtLink :to="`/areas/${area.id}/`">
@@ -24,11 +26,9 @@
 </template>
   
 <script setup>
-import { ref, computed, onMounted } from 'vue';
-import useImages from '@/composables/useImages';
-const { area } = defineProps(['area']);
-
-const imagePath = useImages('areas',area.image.replace('.png', ''));
+  import useImages from '@/composables/useImages';
+  const { area } = defineProps(['area']);
+  const imagePath = useImages('areas',area.image.replace('.png', ''));
 </script>
 
 <style scoped>
