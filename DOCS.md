@@ -77,9 +77,9 @@ to deploy the project to github pages run:
 ```bash
 npm run deploy
 ```
-this command will generate a new gh-pages branch on your current git folder
+this command will generate a new gh-pages branch on your current git folder;
 in order to see the project deployed you have to enable github pages from 
-the github repo>options>Pages>Deploy from a branch and select the gh-pages branch
+the github repo >options>Pages>Deploy from a branch and select the gh-pages branch
 (this operation has to be done only once).
 
 the project then will be visible at:
