@@ -1,6 +1,13 @@
 module.exports = {
   theme: {
     extend: {
+      colors: {
+        'lime-green': '#CDFF00',
+        'teal': '#008080',
+        'purple': '#800080',
+        'greencap': '#1ca34b',
+        'greencap2': '#1eb854',
+      },
       spacing: {
         '1/2': '50%',
         '1/3': '33.333333%',
@@ -18,9 +25,38 @@ module.exports = {
         '4/6': '66.666667%',
         '5/6': '83.333333%',
       },
+
+      // Define a custom animation called "blob" that lasts 7 seconds and repeats infinitely
+      animation: {
+        blob: "blob 8s infinite",
+      },
+
+      // Define the keyframes for the "blob" animation
+      keyframes: {
+        blob: {
+          // At the beginning of the animation, the element is not transformed
+          "0%": {
+            transform: "scale(1)",
+          },
+          // At 33% of the animation, the element is translated right and up and scaled up
+          "33%": {
+            transform: "translate(30px, -20px) scale(1.1)",
+          },
+          // At 66% of the animation, the element is translated left and scaled down
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          // At the end of the animation, the element is not transformed
+          "100%": {
+            transform: "scale(1)",
+          },
+        },
+      },
     },
   },
-  variants: {},
+  variants: {
+    extend: {},
+  },
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
