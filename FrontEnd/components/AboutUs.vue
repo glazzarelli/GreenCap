@@ -10,15 +10,19 @@
             {{ aboutData.description }}
           </p>
         </div>
-        <div>
+        <!-- <div>
           <img :src="aboutData.image" alt="About us" class="w-full h-auto rounded" ref="image">
-        </div>
+        </div> -->
+      <div class="mt-10 mb-18">
+        <Chart/>
+     </div>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import Chart from '@/components/Chart.vue';
 const aboutData = {
   description: "We are a venture capital firm focused on helping startups grow and succeed. Our team brings decades of experience in various industries, and we are passionate about supporting the next generation of entrepreneurs.",
   image: "images/other/chart3.png"
