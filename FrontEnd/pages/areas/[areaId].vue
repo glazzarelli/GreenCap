@@ -19,7 +19,7 @@
     </div>
     <div class="mt-12">
     <h1>Projects in this area</h1>
-    <div class="flex flex-wrap">
+    <div class="card-container">
       <ProjectCardWithoutLinks v-for="project in area.projects" :key="project.id" :project="project"
         class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2" />
     </div>
