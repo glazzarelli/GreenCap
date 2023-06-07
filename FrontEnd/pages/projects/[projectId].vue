@@ -61,13 +61,13 @@
 import useImages from '@/composables/useImages';
 const { projectId } = useRoute().params;
 const { data: project } = await useFetch(useRuntimeConfig().public.baseURL + `/projects/${projectId}`);
+
 if(!project.value){
   //inside the createError function we can pass an object used as a prop by Error.vue
   throw createError({statusCode: 404, statusMessage: 'Project not found', fatal: true});
 }
 
 const imagePath = useImages('projects', project.value.name);
-console.log("this is the image to be searched"+ project.value.person.image.replace('.jpg', ''));
 const imagePathSupervisor = useImages('people',  project.value.person.image.replace('.jpg', ''));
 
 useHead({
