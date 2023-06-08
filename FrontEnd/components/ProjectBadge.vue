@@ -6,14 +6,13 @@
             </div>
         </NuxtLink>
     </div>
-    
 </template>
 
 <script setup>
-defineProps({
-        projects: {
-            type: Array,
-            required: true
-        }
-});
+    defineProps({
+            projects: {
+                type: Array,
+                required: true
+            }
+    });
 </script>
