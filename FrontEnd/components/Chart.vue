@@ -28,6 +28,10 @@ const data = {
     responsive: true,
           maintainAspectRatio: false,
           plugins: {
+            title: {
+               display: true,
+               text: "The work so far",
+            },
             colorschemes: {
                 scheme: 'brewer.Paired12'
             }
