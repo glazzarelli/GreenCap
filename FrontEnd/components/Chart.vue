@@ -12,6 +12,7 @@ const { data: areas } = await useFetch(useRuntimeConfig().public.baseURL + '/are
 const totalInvestments = areas.value.map(area => area.totalInvestment);
 
 const data = {
+    name:'The work so far'
     labels: [ 'Renewable energy', 'Sustainable Tranport', 'Green building','Sustainable agriculture' ],
     datasets: [ { data: [totalInvestments[0], totalInvestments[1],totalInvestments[2],totalInvestments[3]],   
       backgroundColor: ['rgb(52, 77, 103)',
@@ -20,11 +21,7 @@ const data = {
         'rgb(243, 236, 176)'],
         label: 'We already invested '
     }]
-    plugins: {
-            title: {
-                display: true,
-                text: 'The work so far'
-            }
+  
   }
 
   const options = {
