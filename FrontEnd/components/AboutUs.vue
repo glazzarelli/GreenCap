@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-current py-12 px-4">
+  <section class="bg-gray-100 py-12 px-4">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="py-2 mt-2" :class="{ 'slide-in-right': isTextInView }">

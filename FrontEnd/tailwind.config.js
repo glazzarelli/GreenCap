@@ -7,6 +7,7 @@ module.exports = {
         'purple': '#800080',
         'greencap': '#1ca34b',
         'greencap2': '#1eb854',
+        'grey': '#e2e0f0',
       },
       spacing: {
         '1/2': '50%',
