@@ -1,21 +1,21 @@
 <template>
-  <section class="bg-gray-100 py-12 px-4">
+  <section class="bg-green-100 py-12 px-4">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="py-4" :class="{ 'slide-in-right': isTextInView }">
+        <div class="py-2 mt-2" :class="{ 'slide-in-right': isTextInView }">
           <h2 class="text-3xl font-semibold text-gray-800 mb-6 slide-in">
             Why choose GreenCapital
           </h2>
-          <p class="text-gray-600 text-lg" ref="textParagraph">
+          <p class="text-gray-600 text-lg my-auto" ref="textParagraph">
             {{ aboutData.description }}
           </p>
         </div>
         <!-- <div>
           <img :src="aboutData.image" alt="About us" class="w-full h-auto rounded" ref="image">
         </div> -->
-      <div class="mt-10 mb-18">
-        <Chart/>
-     </div>
+        <div class="mt-4 mb-18">
+          <Chart/>
+        </div>
       </div>
     </div>
   </section>

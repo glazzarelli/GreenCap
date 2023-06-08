@@ -1,18 +1,40 @@
 <template>
-  <Heading :title="`People / ` + person.name + ' ' + person.surname" />
-  <div class="mt-10 mb-18">
-    <img :src=imagePath class="rounded-md lg:float-left lg:h-1/3 lg:w-1/3 mr-8 mb-2 shadow-lg lg:max-h-screen lg:object-cover" alt="Person Image">
-    <p class="italic text-center text-4xl font-serif pl-6 pr-6 mb-8">"{{person.motto}}"</p>
-    <h2>{{ person.cv }}</h2>
-  </div>
-  <div class="mt-12">
-    <h1>Supervised Projects</h1>
-    <div class="card-container">
-      <ProjectCardSmall v-for="project in person.projects" :key="project.id" :project="project"
-        class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2" />
+  <section class="sm:max-w-none">
+    <Heading :title="`People / ` + person.name + ' ' + person.surname" />
+    <div class="container flex px-2 py-3 xl:flex-row flex-col md:max-w-none text-center">
+      <div class="lg:max-w-lg md:w-1/2 lg:w-full mb-10 item mx-auto">
+        <img class="object-cover object-center rounded mx-auto" alt="hero" :src="imagePath">
+      </div>
+      <div class="lg:flex-grow md:w-full lg:pl-22 md:pl-16 flex flex-col md:items-start text-center md:text-left">
+        <p class="italic text-center text-3xl font-serif md:my-auto">"{{person.motto}}"</p>
+        <hr class="w-1/4 my-6 border-gray-300 mx-auto">
+        <p class="text-xl font-bold md:px-20 lg:px-2">{{ person.cv }}</p>
+      </div>
     </div>
-  </div>
+    <div class="mt-12">
+      <h1>Supervised Projects</h1>
+      <div class="card-container">
+        <ProjectCardSmall v-for="project in person.projects" :key="project.id" :project="project" class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2" />
+      </div>
+    </div>
+  </section>
 </template>
+
+  <!-- <template>
+    <Heading :title="`People / ` + person.name + ' ' + person.surname" />
+    <div class="mt-10 mb-18">
+      <img :src=imagePath class="rounded-md lg:float-left lg:h-1/3 lg:w-1/3 mr-8 mb-2 shadow-lg lg:max-h-screen lg:object-cover" alt="Person Image">
+      <p class="italic text-center text-4xl font-serif pl-6 pr-6 mb-8">"{{person.motto}}"</p>
+      <h2>{{ person.cv }}</h2>
+    </div>
+    <div class="mt-12">
+      <h1>Supervised Projects</h1>
+      <div class="card-container">
+        <ProjectCardSmall v-for="project in person.projects" :key="project.id" :project="project"
+          class="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2" />
+      </div>
+    </div>
+  </template> -->
 
 <script setup>
 import useImages from '@/composables/useImages';

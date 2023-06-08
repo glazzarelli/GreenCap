@@ -1,10 +1,10 @@
 <template>
-    <section class="opacity-0 blur[5px] translate-x[-110%] transition-all duration-700 ease-in-out hidden-element">
+    <section class="opacity-0 blur[5px] translate-x[-110%] transition-all duration-800 ease-in-out hidden-element">
       <div>
         <Hero />
       </div>
     </section>
-    <section class="opacity-0 blur[5px] translate-x[-110%] transition-all duration-700 ease-in-out hidden-element">
+    <section class="opacity-0 blur[5px] translate-x[-110%] transition-all duration-800 ease-in-out hidden-element">
       <div>
         <AboutUs />
       </div>

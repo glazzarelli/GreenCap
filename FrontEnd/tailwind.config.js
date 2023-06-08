@@ -26,11 +26,9 @@ module.exports = {
         '5/6': '83.333333%',
       },
 
-      // Define a custom animation called "blob" that lasts 7 seconds and repeats infinitely
       animation: {
         blob: "blob 8s infinite",
       },
-
       // Define the keyframes for the "blob" animation
       keyframes: {
         blob: {
