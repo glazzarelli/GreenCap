@@ -67,7 +67,7 @@
 <script setup>
 let sections = ref([]);
 
-onMounted(() => { //run after the DOM has been mounted
+onMounted(() => {
   nextTick(() => {//wait for the next DOM update cycle in order to wait for the sections to be rendered
     sections.value = Array.from(document.querySelectorAll("section")); // Get all sections
     //create an observer instance
@@ -85,6 +85,7 @@ onMounted(() => { //run after the DOM has been mounted
         threshold: 0.3,//percentage of the target's element that needs to be visible in the viewport in order to trigger the callback
       }
     )//end of observer
+    
     //start observing the sections
     sections.value.forEach((section) => {
       observer.observe(section)

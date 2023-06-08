@@ -6,7 +6,7 @@
         <img class="object-cover object-center rounded mx-auto" alt="hero" :src="imagePath">
       </div>
       <div class="lg:flex-grow md:w-full lg:pl-22 md:pl-16 flex flex-col md:items-start text-center md:text-left">
-        <p class="italic text-center text-3xl font-serif md:my-auto">"{{person.motto}}"</p>
+        <p class="italic text-center text-3xl font-serif">"{{person.motto}}"</p>
         <hr class="w-1/4 my-6 border-gray-300 mx-auto">
         <p class="text-xl font-bold md:px-20 lg:px-2">{{ person.cv }}</p>
       </div>
@@ -28,7 +28,7 @@
   if (!person.value) {
     throw createError({ statusCode: 404, statusMessage: 'Person not found', fatal: true });
   }
-
+  
   const imagePath = useImages('people', person.value.image.replace('.jpg', ''));
 
   useHead({
