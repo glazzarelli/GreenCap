@@ -18,8 +18,13 @@ const data = {
         'rgb(110, 204, 175)',
         'rgb(173, 231, 146)',
         'rgb(243, 236, 176)'],
-        label: 'We already invested: '
+        label: 'We already invested '
     }]
+    plugins: {
+            title: {
+                display: true,
+                text: 'The work so far'
+            }
   }
 
   const options = {
