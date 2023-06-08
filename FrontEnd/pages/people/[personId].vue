@@ -19,30 +19,32 @@
     </div>
   </section>
 </template>
+
 <script setup>
-import useImages from '@/composables/useImages';
+  import useImages from '@/composables/useImages';
 
-const { personId } = useRoute().params;
-const { data: person } = await useFetch(useRuntimeConfig().public.baseURL + `/people/${personId}`);
-if (!person.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Person not found', fatal: true });
-}
-const imagePath = useImages('people', person.value.image.replace('.jpg', ''));
+  const { personId } = useRoute().params;
+  const { data: person } = await useFetch(useRuntimeConfig().public.baseURL + `/people/${personId}`);
+  if (!person.value) {
+    throw createError({ statusCode: 404, statusMessage: 'Person not found', fatal: true });
+  }
 
-useHead({
-  title: 'People - GreenCapital',
-  meta: [
-    {
-      name: 'description',
-      content: 'The purpose of a people page is to provide visitors with an overview of the individuals involved in the organization or community, highlighting their expertise, achievements, and contributions.',
-    },
-    {
-      name: 'keywords',
-      content: 'people, expertise, team, profiles',
-    },
-    
-  ],
-})
+  const imagePath = useImages('people', person.value.image.replace('.jpg', ''));
+
+  useHead({
+    title: 'People - GreenCapital',
+    meta: [
+      {
+        name: 'description',
+        content: 'The purpose of a people page is to provide visitors with an overview of the individuals involved in the organization or community, highlighting their expertise, achievements, and contributions.',
+      },
+      {
+        name: 'keywords',
+        content: 'people, expertise, team, profiles',
+      },
+      
+    ],
+  })
 </script>
 
 <style scoped>

@@ -23,13 +23,12 @@
 
 <style scoped>
 .hero {
-  height: 40vh;
+  height: 91vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background: #000; */
   color: #000;
   /* background-image: url('../public/images/areas/green-backgroung.jpg');
   background-size: cover; /* This will ensure the image covers the entire div */

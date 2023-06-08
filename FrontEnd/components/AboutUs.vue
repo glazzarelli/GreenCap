@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-green-100 py-12 px-4">
+  <section class="bg-current py-12 px-4">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div class="py-2 mt-2" :class="{ 'slide-in-right': isTextInView }">
@@ -10,11 +10,11 @@
             {{ aboutData.description }}
           </p>
         </div>
-        <!-- <div>
-          <img :src="aboutData.image" alt="About us" class="w-full h-auto rounded" ref="image">
-        </div> -->
-        <div class="mt-4 mb-18">
-          <Chart/>
+        <div>
+          <h2 class="text-3xl lg:mt-4 lg:ml-20 font-semibold text-gray-800 mb-6 slide-in">Our investments so far</h2>
+          <div class="mt-4 mb-18">
+            <Chart/>
+          </div>
         </div>
       </div>
     </div>
@@ -29,9 +29,7 @@ const aboutData = {
 }
 
 const textParagraph = ref(null);
-const image = ref(null);
 const isTextInView = ref(false);
-const isImageInView = ref(false);
 
 const checkScroll = () => {
   if (!isTextInView.value && textParagraph.value) {
@@ -52,6 +50,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', checkScroll);
 });
+
 </script>
 
 <style scoped>
@@ -76,10 +75,10 @@ onBeforeUnmount(() => {
 }
 
 .slide-in-right {
-  animation: slide-in-right 0.5s forwards;
+  animation: slide-in-right 2s forwards;
 }
 
 .fade-in {
-  animation: fade-in 0.5s forwards;
+  animation: fade-in 2s forwards;
 }
 </style>
