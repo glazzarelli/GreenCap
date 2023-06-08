@@ -26,22 +26,29 @@
                 </p>
                 <div class="relative mb-2">
                     <label for="email" class="leading-7 text-sm ">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        v-model="email"
-                        @input="validateEmail"
+                    <input type="email" id="email" name="email" v-model="email" @input="validateEmail"
                         class="w-full  rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                        <p class="text-red-500 mt-2" v-if="emailError">{{ emailError }}</p>
+                    <p class="text-red-500 mt-2" v-if="emailError">{{ emailError }}</p>
                 </div>
                 <div class="relative mb-4">
                     <label for="message" class="leading-7 text-sm ">Message</label>
                     <textarea id="message" name="message"
                         class="w-full  rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                 </div>
-                <button class="btn btn-accent font-bold">SEND FEEDBACK</button>
-                <p class="text-xs font-medium text-900 mt-3">You will get an answer as soon as possible 
+                <button class="btn btn-accent font-bold" @click="toggleModal">SEND FEEDBACK</button>
+                <div class="modal modal-bottom sm:modal-middle" :class="{ 'modal-open': showModal }">
+                    <div class="modal-box">
+                        <h3 class="font-bold text-lg">Feedback sent!</h3>
+                        <p class="py-4">Thank for your feedback, it helps improve our services.</p>
+                        <div class="modal-action">
+                            <button class="btn" @click="toggleModal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-xs font-medium text-900 mt-3">You will get an answer as soon as possible
                     by our team.</p>
             </div>
         </div>
@@ -49,27 +56,33 @@
 </template>
 
 <script setup>
-    import useEmailValidation from '@/composables/useEmailValidation';
-    const { email, emailError } = useEmailValidation();
-    
-    onMounted(() => {
-        useHead({
-            title: 'Contact Us - GreenCapital',
-            meta: [
-                // Add page description
-                {
-                    name: 'description',
-                    content: 'Contact us for inquiries, feedback, or any other questions you may have. Get in touch with our team and we will be happy to assist you.',
-                },
-                // Add page keywords
-                {
-                    name: 'keywords',
-                    content: 'contact us, inquiries, feedback, customer support',
-                },
-                
-            ],
-        })
+import useEmailValidation from '@/composables/useEmailValidation';
+const { email, emailError } = useEmailValidation();
+
+onMounted(() => {
+    useHead({
+        title: 'Contact Us - GreenCapital',
+        meta: [
+            // Add page description
+            {
+                name: 'description',
+                content: 'Contact us for inquiries, feedback, or any other questions you may have. Get in touch with our team and we will be happy to assist you.',
+            },
+            // Add page keywords
+            {
+                name: 'keywords',
+                content: 'contact us, inquiries, feedback, customer support',
+            },
+
+        ],
     })
+})
+
+const showModal = ref(false);
+
+function toggleModal() {
+    showModal.value = !showModal.value;
+}
 </script>
 
 <style scoped></style>
