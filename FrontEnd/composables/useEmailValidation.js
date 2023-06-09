@@ -5,7 +5,6 @@
  * email: A reference to the email input value.
  * emailError: A computed property that returns an error message if the email input is invalid.
  */
-import { ref, computed } from 'vue';
 
 export default function useEmailValidation() {
   const email = ref('');
@@ -13,7 +12,7 @@ export default function useEmailValidation() {
 
   const emailError = computed(() => {
     if (email.value === '') {
-      return '';
+      return 'Email is required';
     }
     return emailRegex.test(email.value) ? '' : 'Please enter a valid email address';
   });
