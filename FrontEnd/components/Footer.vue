@@ -10,13 +10,31 @@
       </div>
       <div class="form-control w-full my-auto">
         <div class="relative">
-          <input type="text" v-model="email" placeholder="username@site.com" class="input input-bordered items-center px-1 md:px-3 pr-1 w-full" />
-          <button class="btn btn-secondary absolute top-0 right-0 rounded-l-none" style="opacity: 1;">Subscribe</button>
+          <input type="text" v-model="email" placeholder="username@site.com"
+            class="input input-bordered items-center px-1 md:px-3 pr-1 w-full" />
+          <button class="btn btn-secondary absolute top-0 right-0 rounded-l-none" style="opacity: 1;"
+            @click="openModal">Subscribe</button>
+          <div class="modal modal-bottom sm:modal-middle" :class="{ 'modal-open': showModal }">
+            <div class="modal-box">
+              <h3 class="font-bold text-lg">Subscribed to the Newsletter!</h3>
+              <p class="py-4">We appreciate your interest, you will receive our weekly digest. To unsubscribe,
+                click the "unsubscribe" button.</p>
+              <div class="modal-action">
+                <button class="btn btn-warning">Unsubscribe</button>
+                <button class="btn btn-success mx-auto" @click="closeModal">
+                  Close
+                </button>
+
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="text-red-500 mt-2" v-if="emailError">{{ emailError }}</p>
+        <label class="label">
+          <span class="label-text-alt text-error" v-if="showEmailError">{{ emailError }}</span>
+        </label>
       </div>
     </div>
-    
+
     <div class="items-center footer-end grid-flow-col">
       <IconLogo class="h-7" />
       <p>Copyright © 2023 GreenCap - All right reserved</p>
@@ -25,19 +43,37 @@
 </template>
 
 <script setup>
-import useEmailValidation from '@/composables/useEmailValidation';
 const { email, emailError } = useEmailValidation();
+
+const showModal = ref(false);
+const showEmailError = ref(false);
+
+function openModal() {
+  if (emailError.value) {
+    showEmailError.value = true;
+    return;
+  } else {
+    showEmailError.value = false;
+    // clear text email field
+    email.value = '';
+    showModal.value = !showModal.value;
+
+  }
+}
+
+function closeModal() {
+  showModal.value = false;
+}
 </script>
 
   
   
 <style scoped>
-
 .footer-title,
 .label-text,
 .btn,
 .footer-end p {
   font-weight: bold;
-  
+
 }
 </style>
