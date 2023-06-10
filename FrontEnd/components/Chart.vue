@@ -13,7 +13,7 @@ const totalInvestments = areas.value.map(area => area.totalInvestment);
 
 const data = {
     name:'The work so far',
-    labels: [ 'Renewable energy', 'Sustainable Tranport', 'Green building','Sustainable agriculture' ],
+    labels: [ 'Renewable energy', 'Sustainable transport', 'Green and smart building','Sustainable agriculture' ],
     datasets: [ { data: [totalInvestments[0], totalInvestments[1],totalInvestments[2],totalInvestments[3]],   
       backgroundColor: ['rgb(52, 77, 103)',
         'rgb(110, 204, 175)',
