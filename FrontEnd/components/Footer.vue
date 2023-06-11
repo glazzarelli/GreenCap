@@ -37,7 +37,7 @@
 
     <div class="items-center footer-end grid-flow-col">
       <IconLogo class="h-7" />
-      <p>Copyright © 2023 GreenCap - All right reserved</p>
+      <p>Copyright © 2023 GreenCap - All rights reserved</p>
     </div>
   </footer>
 </template>
