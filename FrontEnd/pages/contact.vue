@@ -27,13 +27,13 @@
                 <div class="relative mb-2">
                     <label for="email" class="leading-7 text-sm ">Email</label>
                     <input type="email" id="email" name="email" v-model="email" @input="validateEmail"
-                        class="w-full  rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        class="w-full  rounded border border-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out input input-bordered">
                     <p class="text-red-500 mt-2" v-if="showEmailError">{{ emailError }}</p>
                 </div>
                 <div class="relative mb-4">
                     <label for="message" class="leading-7 text-sm ">Message</label>
                     <textarea id="message" name="message"
-                        class="w-full  rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        class="w-full  rounded border border-gray-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out input input-bordered"></textarea>
                 </div>
                 <button class="btn btn-accent font-bold" @click="openModal">SEND FEEDBACK</button>
                 <div class="modal modal-bottom sm:modal-middle" :class="{ 'modal-open': showModal }">
