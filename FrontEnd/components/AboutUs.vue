@@ -1,22 +1,22 @@
 
 <template>
-  <section class="bg-gray-100 py-12 px-4">
+  <section class="py-12 bg-primary-content px-4">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- The left column with a title, a paragraph and an animation -->
         <div class="py-2 mt-2" :class="{ 'slide-in-right': isTextInView }">
-          <h2 class="text-3xl font-semibold text-gray-800 mb-6 slide-in">
+          <h2 class="text-3xl font-semibold mb-6 slide-in">
             Why choose GreenCapital
           </h2>
-          <p class="text-gray-600 text-lg my-auto" ref="textParagraph">
+          <p class="text-lg my-auto" ref="textParagraph">
             {{ aboutData.description }}
           </p>
         </div>
         <!-- The right column with a title, a chart and some margin -->
         <div>
-          <h2 class="text-3xl lg:mt-4 lg:ml-20 font-semibold text-gray-800 mb-6 slide-in">Our investments so far</h2>
+          <h2 class="text-3xl lg:mt-4 lg:ml-20 font-semibold mb-6 slide-in">Our investments so far</h2>
           <div class="mt-4 mb-18">
-            <Chart/>
+            <Chart />
           </div>
         </div>
       </div>
@@ -69,6 +69,7 @@ onBeforeUnmount(() => {
     transform: translateX(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -79,6 +80,7 @@ onBeforeUnmount(() => {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
