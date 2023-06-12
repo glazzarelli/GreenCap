@@ -1,4 +1,5 @@
 const baseURL = "/GreenCap";
+const baseURLforSEO = "glazzarelli.github.io/GreenCap/";
 
 export default defineNuxtConfig({
     app: {
@@ -51,7 +52,7 @@ export default defineNuxtConfig({
                 },
                 {
                     property: 'og:image',
-                    content: `${baseURL}/greencap-logo.png`
+                    content: `${baseURLforSEO}/greencap-logo.png`
                 },
                 {
                     property: 'og:site_name',
@@ -80,7 +81,7 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'twitter:image',
-                    content: `${baseURL}/greencap-logo.png`
+                    content: `${baseURLforSEO}/greencap-logo.png`
                 },
             ],
             link: [
