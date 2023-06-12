@@ -51,7 +51,7 @@ export default defineNuxtConfig({
                 },
                 {
                     property: 'og:image',
-                    content: `${baseURL}/public/images/greencap-logo.png`
+                    content: `${baseURL}/greencap-logo.png`
                 },
                 {
                     property: 'og:site_name',
@@ -80,7 +80,7 @@ export default defineNuxtConfig({
                 },
                 {
                     name: 'twitter:image',
-                    content: `${baseURL}/public/images/greencap-logo.png`
+                    content: `${baseURL}/greencap-logo.png`
                 },
             ],
             link: [
