@@ -1,5 +1,5 @@
 const baseURL = "/GreenCap";
-const baseURLforSEO = "glazzarelli.github.io/GreenCap/";
+const baseURLforSEO = "https://glazzarelli.github.io/GreenCap/";
 
 export default defineNuxtConfig({
     app: {
@@ -51,8 +51,20 @@ export default defineNuxtConfig({
                     content: 'GreenCap is a venture capital firm committed to investing in sustainable start-ups that are creating positive environmental and social impact.'
                 },
                 {
-                    property: 'og:image',
+                    property: 'og:image:secure_url',
                     content: `${baseURLforSEO}/greencap-logo.png`
+                },
+                {
+                    property: 'og:image:type',
+                    content: 'image/png'
+                },
+                {
+                    property: 'og:image:width',
+                    content: '601'
+                },
+                {
+                    property: 'og:image:height',
+                    content: '601'
                 },
                 {
                     property: 'og:site_name',
