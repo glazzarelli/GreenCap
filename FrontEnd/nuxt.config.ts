@@ -137,7 +137,6 @@ export default defineNuxtConfig({
     },
     ssr: true,
     runtimeConfig: {
-        //dev:0, //TODO change this to 0 when deploying
         public: {
             baseURL: "http://localhost:3001"
             // baseURL: process.env.BASE_URL || 'http://localhost:3001/GreenCap',
