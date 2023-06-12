@@ -1,6 +1,6 @@
 const baseURL = "/GreenCap";
 
-export default defineNuxtConfig({  
+export default defineNuxtConfig({
     app: {
         head: {
             title: 'GreenCapital',
@@ -49,10 +49,9 @@ export default defineNuxtConfig({
                     property: 'og:description',
                     content: 'GreenCap is a venture capital firm committed to investing in sustainable start-ups that are creating positive environmental and social impact.'
                 },
-                // TODO: Change this to the url once the website is live
                 {
                     property: 'og:image',
-                    content: 'assets\images\greencap-logo.png'
+                    content: `${baseURL}/public/images/greencap-logo.png`
                 },
                 {
                     property: 'og:site_name',
@@ -79,10 +78,9 @@ export default defineNuxtConfig({
                     name: 'twitter:description',
                     content: 'GreenCap is a venture capital firm committed to investing in sustainable start-ups that are creating positive environmental and social impact.'
                 },
-                // TODO: Change this to the url once the website is live
                 {
                     name: 'twitter:image',
-                    content: 'assets\images\greencap-logo.png'
+                    content: `${baseURL}/public/images/greencap-logo.png`
                 },
             ],
             link: [
@@ -114,8 +112,8 @@ export default defineNuxtConfig({
                 },
             ]
         },
-        
-        baseURL:baseURL,
+
+        baseURL: baseURL,
     },
     // mode: 'static',
     // router: {
@@ -124,12 +122,12 @@ export default defineNuxtConfig({
     // build: {
     //     publicPath: '/GreenCap/'
     //   },
-      
+
     modules: [
         '@nuxtjs/tailwindcss',
         '@nuxtjs/color-mode'
     ],
-    
+
 
     colorMode: {
         classSuffix: '',
@@ -142,7 +140,7 @@ export default defineNuxtConfig({
         public: {
             baseURL: "http://localhost:3001"
             // baseURL: process.env.BASE_URL || 'http://localhost:3001/GreenCap',
-        }  
-    }, 
-     
+        }
+    },
+
 })
