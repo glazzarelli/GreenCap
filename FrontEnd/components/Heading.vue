@@ -39,5 +39,4 @@ const routes = computed(() => {
 </script>
 
 <style scoped>
-/* Add your styles here */
 </style>
