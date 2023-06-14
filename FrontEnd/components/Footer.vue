@@ -20,7 +20,7 @@
               <p class="py-4">We appreciate your interest, you will receive our weekly digest. To unsubscribe,
                 click the "unsubscribe" button.</p>
               <div class="modal-action">
-                <button class="btn btn-warning">Unsubscribe</button>
+                <button class="btn btn-warning" @click="closeModal">Unsubscribe</button>
                 <button class="btn btn-success mx-auto" @click="closeModal">
                   Close
                 </button>
