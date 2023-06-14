@@ -28,9 +28,7 @@
             </div>
           </div>
         </div>
-        <label class="label">
-          <span class="label-text-alt text-error" v-if="showEmailError">{{ emailError }}</span>
-        </label>
+          <span class="label-text-alt text-error text-sm" v-if="showEmailError">{{ emailError }}</span>
       </div>
     </div>
     <div class="items-center footer-end grid-flow-col">
