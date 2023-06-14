@@ -128,13 +128,6 @@ export default defineNuxtConfig({
 
         baseURL: baseURL,
     },
-    // mode: 'static',
-    // router: {
-    //    base: '/your-github-repository-name/'
-    // },
-    // build: {
-    //     publicPath: '/GreenCap/'
-    //   },
 
     modules: [
         '@nuxtjs/tailwindcss',
@@ -150,8 +143,7 @@ export default defineNuxtConfig({
     ssr: true,
     runtimeConfig: {
         public: {
-            baseURL: "http://localhost:3001"
-            // baseURL: process.env.BASE_URL || 'http://localhost:3001/GreenCap',
+            baseURL: "http://localhost:3001",
         }
     },
 
