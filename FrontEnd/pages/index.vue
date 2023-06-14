@@ -6,13 +6,14 @@
     </section>
     <section class="opacity-0 blur[5px] translate-x[-110%] transition-all duration-800 ease-in-out hidden-element">
       <div>
-        <AboutUs />
+        <ChartSection />
       </div>
     </section>
   </template>
   
   <script setup>
   import { ref, onMounted, nextTick } from 'vue';  
+import ChartSection from '~/components/ChartSection.vue';
   let hiddenElements = ref([]);
   
   onMounted(() => { 
