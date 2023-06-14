@@ -146,5 +146,4 @@ export default defineNuxtConfig({
             baseURL: "http://localhost:3001",
         }
     },
-
 })
