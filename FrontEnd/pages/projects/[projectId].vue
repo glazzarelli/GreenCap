@@ -9,20 +9,26 @@
             </figure>
             <div class="lg:w-2/3 w-full md:mx-auto md:mt-8 lg:px-5 py-0 mt-4 flex flex-wrap md:flex-nowrap">
                 <!-- text column -->
-                <div class="lg:w-2/3 w-full">
+                <div class="lg:w-2/3 w-full flex-col">
                     <p class="leading-relaxed mx-2">{{project.descriptionLong}}</p>
                     <div class="col-start-5">
-                    <h2 class="card-subtitle mb-2">Areas: </h2>
-                    <div class="card-actions">
-                    <div v-for="area in project.areas" :key="area">
-                        <NuxtLink :to="`/areas/${area.id}`">
-                            <div class="badge badge-secondary">
-                                {{ area.name }}
-                            </div>
-                        </NuxtLink>
+                        <h2 class="card-subtitle mb-2">Areas: </h2>
+                            <div class="card-actions flex flex-col">
+                                <div v-for="area in project.areas" :key="area">
+                                    <NuxtLink :to="`/areas/${area.id}`">
+                                        <div class="badge badge-secondary">
+                                            {{ area.name }}
+                                        </div>
+                                    </NuxtLink>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-lg">
+                                    In this project the minimum investment is: {{ project.investment }} €
+                                </p>
+                                </div>
+                                
+                            <div>
                     </div>
-                    <p style="font-weight: bold; font-size: 18px;">
-                        <br> In this project the minimum investment is: {{ project.investment }} € </p>
                 </div>
             </div>
         </div>
@@ -47,7 +53,9 @@
             </div>
         </div>
     </section>
-</template>
+</template> 
+  
+  
 
 <script setup>
     import useImages from '@/composables/useImages';
