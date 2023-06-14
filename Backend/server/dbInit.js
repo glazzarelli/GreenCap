@@ -88,7 +88,7 @@ export default async (models) => {
         {
             name: "Artificial Meat",
             image: "artificial-meat.png",
-            team: ["Bart", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Alexander Turner", "Benjamin Thompson", "Samuel Wright", "Sophia Carter", "Harper Campbell"],
             descriptionShort: "Artificial meat offers a sustainable and ethical alternative to traditional meat production",
             descriptionLong: "Artificial meat, also known as cultured meat or lab-grown meat, is a type of meat produced by in vitro cultivation of animal cells. The process involves taking a small sample of animal cells and then growing them in a lab setting to produce muscle tissue that can be processed and cooked like conventional meat. The goal of artificial meat is to provide a more sustainable and ethical alternative to traditional meat production, which is associated with environmental degradation, animal cruelty, and public health risks. While still in the experimental stage, artificial meat has the potential to revolutionize the food industry and help address some of the world's most pressing challenges.",
             personId: person0.id,
@@ -98,7 +98,7 @@ export default async (models) => {
         {
             name: "Windpower",
             image: "windpower.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Mia Richardson", "Michael Jenkins", "Daniel Anderson", "Amelia Foster", "Alexander Turner"],
             descriptionShort: "Windpower creates vertical wind turbines, perfect for for urban areas, accessible and easy to maintain.",
             descriptionLong: "Vertical wind turbines are a type of wind turbine where the main rotor shaft is arranged vertically. Unlike traditional horizontal axis turbines, vertical wind turbines can operate in turbulent and gusty winds from any direction, making them ideal for urban areas. They have a smaller footprint and can be installed at lower heights, making them more accessible and easier to maintain. Vertical wind turbines are also quieter than their horizontal counterparts, making them a more attractive option for residential areas. They are an innovative and sustainable solution for generating clean energy.",
             personId: person1.id,
@@ -107,7 +107,7 @@ export default async (models) => {
         {
             name: "Solar roads",
             image: "solar-roads.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Isabella Hayes", "Olivia Bennett", "David Mitchell", "Nicholas Parker", "Ava Morgan"],
             descriptionShort: "Solar roads are a renewable energy technology that embeds solar panels into roadways to generate electricity. ",
             descriptionLong: "Solar roads are a type of renewable energy technology that involves embedding solar panels into roadways to generate electricity. The solar panels are designed to be durable enough to withstand the weight of vehicles and weather conditions. The electricity generated from the solar panels can be used to power streetlights, electric vehicles, and nearby buildings. Solar roads have the potential to reduce carbon emissions and promote sustainability by generating clean energy from existing infrastructure. However, the technology is still in the early stages of development, and there are concerns about its cost and efficiency.",
             personId: person2.id,
@@ -116,7 +116,7 @@ export default async (models) => {
         {
             name: "Wind solar",
             image: "wind-solar.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Isabella Hayes", "Olivia Bennett", "David Mitchell", "Nicholas Parker", "Ava Morgan"],
             descriptionShort: "Wind solar is a solution that combines wind turbines and solar panels to generate electricity, taking the best of both worlds.",
             descriptionLong: "The wind-solar hybrid technology is a renewable energy solution that combines the benefits of wind and solar energy generation in a single system. The system consists of a wind turbine that is equipped with solar panels. When the wind is blowing, the turbine generates electricity, but when there is no wind, the solar panels take over and generate power from the sun.The wind turbine is designed with a unique blade system that is capable of rotating 360 degrees around the central axis, allowing it to capture wind from any direction. The blades are made from lightweight materials, such as carbon fiber or composite materials, to reduce the weight of the turbine and increase its efficiency.The solar panels are installed on the surface of the turbine blades, and are made from high-efficiency photovoltaic cells that can convert sunlight into electricity. When the turbine is not in use, the blades can be tilted to face the sun and maximize the amount of solar energy that is captured.The system is equipped with a control unit that monitors the wind speed and solar irradiance, and automatically switches between wind and solar power generation based on the available resources. This ensures that the system always operates at maximum efficiency, and provides a reliable and consistent source of renewable energy.The wind-solar hybrid technology is ideal for areas with fluctuating wind and solar conditions, and can provide a reliable source of renewable energy throughout the day and night. It is also highly versatile, and can be installed in a wide range of locations, including onshore and offshore wind farms, rooftops, and remote areas.Overall, the wind-solar hybrid technology is a promising solution for renewable energy generation, offering a unique and innovative approach to combining wind and solar power generation in a single system.",
             personId: person3.id,
@@ -125,7 +125,7 @@ export default async (models) => {
         {
             name: "Trash",
             image: "trash.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Matthew Collins", "Emily Sullivan", "Emma Davis", "Samuel Wright", "Benjamin Thompson"],
             descriptionShort: "Trash is a waste disposal sink that sorts and transports waste to the appropriate recycling or disposal location.",
             descriptionLong: "The waste disposal sink is a new technology that allows for the easy disposal of various types of waste within a household or commercial building. The sink is designed with a built-in shredder and a system of sensors and pipes that sorts and transports the waste to the appropriate recycling or disposal location.When waste is placed into the sink, it is automatically shredded into smaller pieces to make it easier to transport through the pipes. The system uses a series of sensors and x-rays to identify and sort the different types of waste, including organic, plastic, metal, and glass. The sorted waste is then transported through a network of pipes to the appropriate location for recycling or disposal.The system is designed to be easy to use, and can be installed in any household or commercial building with a water supply and drainage system. The sink itself is made from high-quality materials that are durable and easy to clean, and the system is designed to be low-maintenance and cost-effective.One of the key benefits of the waste disposal sink is its ability to promote recycling and reduce the amount of waste that ends up in landfills or incinerators. By separating the different types of waste and ensuring that they are properly recycled or disposed of, the system helps to reduce the environmental impact of waste disposal.Overall, the waste disposal sink is a promising technology for sustainable waste management, offering an innovative and convenient solution for households and businesses looking to reduce their environmental impact and promote recycling.",
             personId: person4.id,
@@ -135,7 +135,7 @@ export default async (models) => {
         {
             name: "Uphill Road",
             image: "uphill-road.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Mia Richardson", "Michael Jenkins", "Daniel Anderson", "Amelia Foster", "Alexander Turner"],
             descriptionShort: "Uphill road is a bike escalator technology designed to help cyclists easily navigate hills and other steep inclines.",
             descriptionLong: "The bike escalator is a new technology designed to help cyclists easily navigate hills and other steep inclines. The system is essentially a series of conveyor belts that run parallel to a bike path, allowing cyclists to ride their bikes onto the belts and be carried up the hill.The bike escalator is designed to be easy to use and safe for cyclists of all ages and skill levels. The conveyor belts are covered in a non-slip material to ensure that bikes and riders stay securely in place during the ride up the hill. The system also includes safety features such as handrails and barriers to prevent accidents and keep cyclists safe.The bike escalator is powered by electricity and is designed to be environmentally friendly, with low energy consumption and minimal impact on the surrounding environment. The system can be easily installed along existing bike paths, and can be customized to fit the specific needs of different locations and inclines.One of the key benefits of the bike escalator is its ability to promote cycling as a sustainable and healthy mode of transportation. By making it easier for cyclists to navigate hills and other challenging terrain, the system encourages more people to use bikes as a means of transportation, reducing the environmental impact of cars and other vehicles.Overall, the bike escalator is a promising technology for sustainable transportation, offering an innovative and convenient solution for cyclists looking to navigate hills and other challenging terrain.",
             personId: person5.id,
@@ -145,7 +145,7 @@ export default async (models) => {
         {
             name: "Smart Road",
             image: "smart-road.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["James Peterson", "Mia Richardson", "Charlotte Phillips", "Alexander Turner", "Daniel Anderson"],
             descriptionShort: "A road that can recharge electric vehicles while they are in motion, why stop and recharge when you can just drive.",
             descriptionLong: "A street that can recharge electric cars is a type of smart road that uses wireless charging technology to power electric vehicles (EVs) while they are in motion. The technology works by embedding wireless charging coils into the road surface, which generate electromagnetic fields that can be used to charge EV batteries. This eliminates the need for EV drivers to stop and plug in their cars at charging stations. The street can also be equipped with sensors and other smart features to improve traffic flow and reduce congestion. While still in the early stages of development, this technology has the potential to revolutionize the way we travel and reduce our dependence on fossil fuels.",
             personId: person6.id,
@@ -154,7 +154,7 @@ export default async (models) => {
         {
             name: "Green roofs",
             image: "green-roofs.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Alexander Turner", "Benjamin Thompson", "Samuel Wright", "Sophia Carter", "Harper Campbell"],
             descriptionShort: "Green roofs are sustainable roofing systems that support vegetation on top of a building. ",
             descriptionLong: "Green roofs, also known as living roofs or eco-roofs, are sustainable roofing systems designed to support vegetation and soil on top of a building's surface. They provide a natural insulation layer, help reduce heat island effect, and absorb rainwater, reducing runoff and improving overall water management. Green roofs can also improve air quality, provide habitats for wildlife, and enhance the aesthetic value of a building. They can be installed on new or existing buildings and can be customized to suit different climates, building types, and vegetation preferences. Overall, green roofs are a great way to promote sustainability and reduce the environmental impact of buildings.",
             personId: person7.id,
@@ -163,7 +163,7 @@ export default async (models) => {
         {
             name: "Eco-Homes",
             image: "eco-homes.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Isabella Hayes","Mia Richardson", "Charlotte Phillips", "Alexander Turner", "Daniel Anderson"],
             descriptionShort: "EcoHomes are the new net zero energy buildings. No bills by helping the planet.",
             descriptionLong: "Net zero energy buildings are sustainable buildings that produce as much energy as they consume over the course of a year. These buildings are designed to be highly energy-efficient and typically incorporate renewable energy sources, such as solar panels, to generate the energy needed to power the building. By reducing energy consumption and utilizing renewable energy sources, net zero energy buildings can significantly reduce greenhouse gas emissions and promote sustainability. Net zero energy buildings are becoming increasingly popular in the green building industry as a way to reduce the environmental impact of buildings and promote a more sustainable future.",
             personId: person8.id,
@@ -172,7 +172,7 @@ export default async (models) => {
         {
             name: "Smart farming",
             image: "smart-farming.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Matthew Collins", "Emily Sullivan", "Emma Davis", "Samuel Wright", "Benjamin Thompson"],
             descriptionShort: "Smart farming employes precision farming to optimize crop production while minimizing waste.",
             descriptionLong: "Precision farming is an innovative approach to agriculture that utilizes technology to optimize crop production and minimize waste. It involves the use of advanced tools such as GPS, sensors, drones, and machine learning algorithms to collect and analyze data on soil conditions, weather patterns, and crop growth in real-time. This information is then used to make informed decisions about planting, fertilization, irrigation, and pest management, resulting in increased yields, reduced costs, and improved sustainability. By using precision farming techniques, farmers can reduce their environmental impact while increasing profitability and ensuring food security for future generations.",
             personId: person9.id,
@@ -181,7 +181,7 @@ export default async (models) => {
         {
             name: "Permaculture",
             image: "permaculture.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Matthew Collins", "Emily Sullivan", "Emma Davis", "Samuel Wright", "Benjamin Thompson"],
             descriptionShort: "Permaculture uses natural principles and patterns to create self-sufficient and ecologically balanced systems.",
             descriptionLong: "Permaculture is a sustainable and holistic approach to agriculture and design that aims to create self-sufficient and ecologically balanced systems. It involves using natural principles and patterns to design landscapes that mimic the diversity, stability, and resilience of natural ecosystems. Permaculture emphasizes the use of renewable resources, waste reduction, and the integration of plants and animals to create a productive and sustainable ecosystem. It also focuses on building soil health, conserving water, and using low-tech solutions to minimize energy consumption. Permaculture principles can be applied to urban and rural environments, and can promote food security, biodiversity, and community resilience.",
             personId: person0.id,
@@ -190,7 +190,7 @@ export default async (models) => {
         {
             name: "Insecta",
             image: "insecta.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["James Peterson", "Mia Richardson", "Charlotte Phillips", "Alexander Turner", "Daniel Anderson"],
             descriptionShort: "Insecta employes insect farming as sustainable and efficient source of food.",
             descriptionLong: "Insect farming is the practice of breeding and raising insects for human consumption and other uses. Insects such as crickets, mealworms, and grasshoppers are high in protein, low in fat, and require significantly less water and land than traditional livestock. Insect farming has the potential to be a more sustainable and efficient way to produce food, as well as provide alternative sources of protein for people around the world. While still a relatively new concept, insect farming is gaining popularity as people become more interested in sustainable food sources.",
             personId: person1.id,
@@ -199,7 +199,7 @@ export default async (models) => {
         {
             name: "Hydro-grow",
             image: "hydro-grow.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["James Peterson", "Mia Richardson", "Charlotte Phillips", "Alexander Turner", "Daniel Anderson"],
             descriptionShort: "Hydrogrow specializes in developing and implementing sustainable hydroponic farming solutions for urban agriculture.",
             descriptionLong: "Hydrogrow is a forward-thinking start-up that is committed to making a positive impact on the environment and promoting sustainable agriculture. Their primary focus is on hydroponic farming, which is a soilless method of growing crops in nutrient-rich water. Hydroponic systems use significantly less water than traditional farming methods and can be implemented in urban environments, making it an ideal solution for increasing local food production in cities.Hydrogrow designs and builds customized hydroponic systems that are tailored to meet the specific needs of their clients. They offer a range of products and services, including vertical farming systems, aquaponic systems, and automated monitoring and control systems. Their solutions are scalable, efficient, and can be used to grow a variety of crops, including vegetables, herbs, and fruits.Hydrogrow's commitment to sustainability extends beyond their products and services. They prioritize environmentally-friendly practices in their operations, such as using renewable energy sources, reducing waste, and recycling materials. Hydrogrow is dedicated to advancing the future of agriculture and providing sustainable food solutions for communities around the world.",
             personId: person2.id,
@@ -208,7 +208,7 @@ export default async (models) => {
         {
             name: "Rivercross",
             image: "rivercross.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Mia Richardson", "Michael Jenkins", "Daniel Anderson", "Amelia Foster", "Alexander Turner"],
             descriptionShort: "Rivercross creates sustainable and innovative solutions for water management.",
             descriptionLong: "Rivercross is a startup that is dedicated to solving the complex challenges of water management through sustainable and innovative solutions. They provide a range of services and products that aim to improve the quality and availability of water while reducing waste and promoting conservation. Rivercross works with clients in various sectors, including agriculture, industry, and municipalities, to identify and implement water management strategies that are tailored to their specific needs.Their services include water quality testing and analysis, water treatment solutions, rainwater harvesting systems, and wastewater treatment and reuse. They also offer a range of products such as water sensors, filtration systems, and irrigation equipment to help clients conserve and manage water resources more efficiently.At Rivercross, sustainability is at the core of everything they do. They believe that by developing sustainable solutions for water management, they can help create a more equitable and resilient world. Their innovative approach to water management has already made a significant impact, and they continue to push the boundaries of what is possible in this critical field.",
             personId: person3.id,
@@ -217,7 +217,7 @@ export default async (models) => {
         {
             name: "Solar genius",
             image: "solar-genius.png",
-            team: ["Boe", "Lisa", "Maggie", "Homer", "Marge"],
+            team: ["Isabella Hayes","Mia Richardson", "Charlotte Phillips", "Alexander Turner", "Daniel Anderson"],
             descriptionShort: "Solar Genius is a startup focused on providing renewable energy solutions to homes and businesses.",
             descriptionLong: "Solar Genius is a startup that was founded with the mission of promoting sustainable and environmentally friendly energy solutions. They specialize in solar panel installations for homes and businesses, and offer a comprehensive range of services to their clients. These services include consultation, design, installation, and maintenance of solar panels.Solar Genius is dedicated to providing customized solutions to each of their clients, based on their unique energy needs and budget. They work closely with their clients to assess their energy consumption, and develop a customized plan that is tailored to their specific needs. Their team of experts is highly skilled and experienced in the design and installation of solar panels, and they use only the highest quality materials to ensure the best possible performance and longevity of their systems.In addition to solar panel installations, Solar Genius also provides a range of other services related to renewable energy. They offer energy efficiency assessments, which can help identify areas where energy consumption can be reduced, as well as battery storage solutions to help store excess energy generated by solar panels. They also provide ongoing maintenance and support services to ensure that their clients' solar panel systems are always performing at their best.Overall, Solar Genius is a startup that is focused on helping people transition to cleaner, more sustainable energy sources. Their dedication to providing customized solutions, high-quality installations, and ongoing support has made them a trusted provider of renewable energy solutions in their community.",
             personId: person4.id,
