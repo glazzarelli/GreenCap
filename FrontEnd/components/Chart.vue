@@ -35,11 +35,11 @@ const options = {
     colorschemes: {
       scheme: 'brewer.Paired12',
     },
-    legend: {
-      labels: {
-        color: 'white', // Set the font color of the labels dynamically
-      },
-    },
+    // legend: {
+    //   labels: {
+    //     color: 'white', // Set the font color of the labels dynamically
+    //   },
+    // },
   },
 };
 </script>
