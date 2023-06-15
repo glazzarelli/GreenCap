@@ -134,12 +134,12 @@ export default defineNuxtConfig({
         '@nuxtjs/color-mode'
     ],
 
-
     colorMode: {
         classSuffix: '',
         preference: 'light', // default theme
         dataValue: 'theme', // activate data-theme in <html> tag
     },
+    
     ssr: true,
     runtimeConfig: {
         public: {
