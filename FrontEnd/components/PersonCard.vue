@@ -16,15 +16,6 @@
 <script setup>
 import { ref} from 'vue';
 
-/**
- * The props for the PersonCard component.
- * @typedef {Object} PersonCardProps
- * @property {Object} person - The person object to display.
- * @property {string} person.id - The id of the person.
- * @property {string} person.name - The name of the person.
- * @property {string} person.surname - The surname of the person.
- * @property {string} person.image - The image path of the person.
- */
 const { person } = defineProps(['person']);
 
 const cardHoverOpacity = ref(false);
