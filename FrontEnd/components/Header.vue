@@ -57,19 +57,19 @@
                     </label>
                     <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                         <li>
-                            <NuxtLink onclick="document.activeElement.blur()" to="/areas">Areas</NuxtLink>
+                            <NuxtLink onclick="document.activeElement.blur()" to="/areas/">Areas</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink onclick="document.activeElement.blur()" to="/projects">Projects</NuxtLink>
+                            <NuxtLink onclick="document.activeElement.blur()" to="/projects/">Projects</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink onclick="document.activeElement.blur()" to="/people">People</NuxtLink>
+                            <NuxtLink onclick="document.activeElement.blur()" to="/people/">People</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink onclick="document.activeElement.blur()" to="/about">About Us</NuxtLink>
+                            <NuxtLink onclick="document.activeElement.blur()" to="/about/">About Us</NuxtLink>
                         </li>
                         <li>
-                            <NuxtLink onclick="document.activeElement.blur()" to="/contact">Contact Us</NuxtLink>
+                            <NuxtLink onclick="document.activeElement.blur()" to="/contact/">Contact Us</NuxtLink>
                         </li>
                     </ul>
                 </div>

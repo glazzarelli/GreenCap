@@ -56,7 +56,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-/* Animation for the left column */
+/* Animatio keyframes */
 @keyframes slide-in-right {
   0% {
     transform: translateX(100%);
