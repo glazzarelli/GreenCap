@@ -17,10 +17,8 @@
           <div class="modal modal-bottom sm:modal-middle" :class="{ 'modal-open': showModal }">
             <div class="modal-box">
               <h3 class="font-bold text-lg">Subscribed to the Newsletter!</h3>
-              <p class="py-4">We appreciate your interest, you will receive our weekly digest. To unsubscribe,
-                click the "unsubscribe" button.</p>
+              <p class="py-4">We appreciate your interest, you will receive our weekly digest.</p>
               <div class="modal-action">
-                <button class="btn btn-warning" @click="closeModal">Unsubscribe</button>
                 <button class="btn btn-success mx-auto" @click="closeModal">
                   Close
                 </button>
