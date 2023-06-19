@@ -6,7 +6,7 @@
         <img class="object-cover object-center rounded mx-auto" alt="hero" :src="imagePath">
       </div>
       <div class="lg:flex-grow md:w-full lg:pl-22 md:pl-16 flex flex-col md:items-start text-center md:text-left">
-        <p class="italic text-center text-3xl font-serif">"{{person.motto}}"</p>
+        <p class="italic text-center text-3xl lg:text-4xl font-serif">"{{person.motto}}"</p>
         <hr class="w-1/4 my-6 border-gray-300 mx-auto">
         <p class="text-xl md:px-20 lg:px-0 2xl:mr-8 xl:text-lg 2xl:text-2xl">{{ person.cv }}</p>
       </div>
