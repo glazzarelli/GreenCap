@@ -2,13 +2,13 @@
   <section class="sm:max-w-none">
     <Heading :title="`People / ` + person.name + ' ' + person.surname" />
     <div class="container flex px-2 py-3 xl:flex-row flex-col md:max-w-none text-center">
-      <div class="lg:max-w-lg md:w-1/2 lg:w-full mb-10 item mx-auto">
+      <div class="lg:max-w-lg md:w-1/2 lg:w-full mb-10 lg:mt-6 2xl:mt-0 item mx-auto ">
         <img class="object-cover object-center rounded mx-auto" alt="hero" :src="imagePath">
       </div>
       <div class="lg:flex-grow md:w-full lg:pl-22 md:pl-16 flex flex-col md:items-start text-center md:text-left">
         <p class="italic text-center text-3xl font-serif">"{{person.motto}}"</p>
         <hr class="w-1/4 my-6 border-gray-300 mx-auto">
-        <p class="text-xl font-bold md:px-20 lg:px-2">{{ person.cv }}</p>
+        <p class="text-xl md:px-20 lg:px-0 2xl:mr-8 xl:text-lg 2xl:text-2xl">{{ person.cv }}</p>
       </div>
     </div>
     <div class="mt-12">
