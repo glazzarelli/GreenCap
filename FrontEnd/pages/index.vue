@@ -12,8 +12,6 @@
   </template>
   
   <script setup>
-  import { ref, onMounted, nextTick } from 'vue';  
-import ChartSection from '~/components/ChartSection.vue';
   let hiddenElements = ref([]);
   
   onMounted(() => { 

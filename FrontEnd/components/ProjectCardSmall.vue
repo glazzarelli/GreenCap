@@ -11,7 +11,6 @@
 </template>
 
 <script setup>
-import useImages from '@/composables/useImages';
 const { project } = defineProps(['project'])
 const imagePath = useImages('projects', project.name);
 </script>

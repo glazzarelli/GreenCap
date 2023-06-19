@@ -58,7 +58,6 @@
   
 
 <script setup>
-    import useImages from '@/composables/useImages';
     const { projectId } = useRoute().params;
     const { data: project } = await useFetch(useRuntimeConfig().public.baseURL + `/projects/${projectId}`);
 

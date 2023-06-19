@@ -28,9 +28,6 @@
 </template>
 
 <script setup>
-//import useImages from composables
-import useImages from '@/composables/useImages';
-
 const expand = ref(false);
 const { areaId } = useRoute().params;
 const { data: area } = await useFetch(useRuntimeConfig().public.baseURL + `/areas/${areaId}`);

@@ -26,7 +26,6 @@
 </template>
   
 <script setup>
-  import useImages from '@/composables/useImages';
   const { area } = defineProps(['area']);
   const imagePath = useImages('areas',area.image.replace('.png', ''));
 </script>

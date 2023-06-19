@@ -21,8 +21,6 @@
 </template>
 
 <script setup>
-  import useImages from '@/composables/useImages';
-
   const { personId } = useRoute().params;
   const { data: person } = await useFetch(useRuntimeConfig().public.baseURL + `/people/${personId}`);
   if (!person.value) {

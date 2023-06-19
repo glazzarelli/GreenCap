@@ -14,6 +14,10 @@
         <!-- The right column with a title, a chart and some margin -->
         <div>
           <h2 class="text-3xl lg:mt-4 lg:ml-20 font-semibold mb-6">Our investments so far</h2>
+          <div class="inline-flex items-center space-x-2 mr-2 " v-for="(label, index) in labels" :key="index">
+            <div class="w-5 h-5" :style="{ backgroundColor: colors[index] }"></div>
+            <span>{{ label }}</span>
+          </div>
           <div class="mt-4 mb-18">
             <Chart />
           </div>
@@ -24,8 +28,8 @@
 </template>
 
 <script setup>
-import Chart from '@/components/Chart.vue';
-
+const labels= ['Renewable energy', 'Sustainable transport', 'Green and smart building', 'Sustainable agriculture'];
+const colors= ['rgb(52, 77, 103)', 'rgb(110, 204, 175)', 'rgb(173, 231, 146)', 'rgb(243, 236, 176)'];
 // Refs  variables for the animation
 const textParagraph = ref(null);
 const isTextInView = ref(false);
@@ -70,5 +74,17 @@ onBeforeUnmount(() => {
 
 .slide-in-right {
   animation: slide-in-right 2s forwards;
+}
+.custom-legend {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 </style>
